@@ -9,12 +9,10 @@ body {
 
 header {
     background-color: black;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 #mainHeader {
     background-color: transparent;
-    box-shadow: transparent 0px 4px 12px;
 }
 
 ul {
