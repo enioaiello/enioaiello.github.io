@@ -54,6 +54,7 @@ li {
     width: 15%;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: spin 50s linear infinite;
 }
 
 h1 {
@@ -139,4 +140,13 @@ img {
 
 footer {
     text-align: center;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
