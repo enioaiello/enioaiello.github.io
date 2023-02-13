@@ -26,8 +26,8 @@ li {
     padding: 1%;
 }
 
-.navBarItems {
-    color: white;
+li a {
+    color: gray;
     text-decoration: none;
     font-size: 1.5vh;
 }
@@ -169,7 +169,18 @@ footer {
 
 @keyframes ping {
     75%, 100% {
-      transform: scale(2);
-      opacity: 0;
+        transform: scale(2);
+        opacity: 0;
     }
-  }
+}
+
+.activeItem {
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+li a:hover {
+    border-bottom: 2px solid gray;
+    padding-bottom: 5px;
+}
