@@ -184,3 +184,29 @@ li a:hover {
     border-bottom: 2px solid gray;
     padding-bottom: 5px;
 }
+
+#containers {
+    display: grid;
+    place-items: center;
+}
+
+#mainTitle {
+    width: 8.5ch;
+    animation: typing 2s steps(11), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 2em;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
