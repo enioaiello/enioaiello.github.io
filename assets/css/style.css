@@ -29,7 +29,7 @@ li {
 li a {
     color: gray;
     text-decoration: none;
-    font-size: 1.5vh;
+    font-size: 2vh;
 }
 
 #homeBody {
@@ -79,8 +79,6 @@ p {
     background-color: black;
     border: 1px solid black;
     border-radius: 5px;
-    /* width: 25%;
-    height: 5vh; */
     padding: 2% 6%;
     margin: 1%;
 }
@@ -93,9 +91,9 @@ p {
 
 article {
     display: inline-block;
-    width: 47%;
-    padding: 1%;
-    font-size: 1.5vh;
+    width: 45%;
+    padding: 1% 0.5%;
+    font-size: 2vh;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     margin: 1%;
@@ -143,8 +141,6 @@ footer {
 
 .easterEgg {
     animation: spin 5s linear normal;
-    /* animation: bounce 5s normal; */
-    /* animation: ping 1s cubic-bezier(0, 0, 0.2, 1) normal; */
 }
 
 @keyframes spin {
@@ -153,24 +149,6 @@ footer {
     }
     to {
         transform: rotate(360deg);
-    }
-}
-
-@keyframes bounce {
-    0%, 100% {
-      transform: translateY(-25%);
-      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-    }
-    50% {
-      transform: translateY(0);
-      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-    }
-  }
-
-@keyframes ping {
-    75%, 100% {
-        transform: scale(2);
-        opacity: 0;
     }
 }
 
@@ -183,30 +161,4 @@ footer {
 li a:hover {
     border-bottom: 2px solid gray;
     padding-bottom: 5px;
-}
-
-#containers {
-    display: grid;
-    place-items: center;
-}
-
-#mainTitle {
-    width: 8.5ch;
-    animation: typing 2s steps(11), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-size: 2em;
-}
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent
-    }
 }
