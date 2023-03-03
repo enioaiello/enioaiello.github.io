@@ -9,6 +9,9 @@ body {
 
 header {
     background-color: black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 #mainHeader {
