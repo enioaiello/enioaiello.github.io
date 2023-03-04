@@ -105,8 +105,8 @@ article {
 
 a {
     color: blue;
-    text-decoration: none;
-    font-weight: bold;
+    text-decoration: underline;
+    /* font-weight: bold; */
 }
 
 .leftArticle {
@@ -121,9 +121,9 @@ a {
     clear: both;
 }
 
-hr {
+/* hr {
     width: 40%;
-}
+} */
 
 #rightArticleContent {
     text-align: right;
@@ -157,6 +157,10 @@ footer {
 
 .activeItem {
     color: white;
+    padding-bottom: 5px;
+}
+
+.activeItem:hover {
     border-bottom: 2px solid white;
     padding-bottom: 5px;
 }
