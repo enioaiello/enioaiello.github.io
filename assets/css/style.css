@@ -106,7 +106,6 @@ article {
 a {
     color: blue;
     text-decoration: underline;
-    /* font-weight: bold; */
 }
 
 .leftArticle {
@@ -120,10 +119,6 @@ a {
 .clear {
     clear: both;
 }
-
-/* hr {
-    width: 40%;
-} */
 
 #rightArticleContent {
     text-align: right;
