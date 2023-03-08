@@ -163,3 +163,13 @@ li a:hover {
     border-bottom: 2px solid gray;
     padding-bottom: 5px;
 }
+
+footer {
+    background-color: black;
+}
+
+footer p {
+    padding: 1%;
+    color: white;
+    margin: 0;
+}
