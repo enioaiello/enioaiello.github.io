@@ -162,6 +162,7 @@ footer {
 li a:hover {
     border-bottom: 2px solid gray;
     padding-bottom: 5px;
+    animation: border-animation 0.5s normal;
 }
 
 footer {
@@ -172,4 +173,18 @@ footer p {
     padding: 1%;
     color: white;
     margin: 0;
+}
+
+.button:hover {
+    background-color: gray;
+    border: 1px solid darkgray;
+}
+
+@keyframes border-animation {
+    0% {
+        border-bottom-color: transparent;
+    }
+    50% {
+        border-bottom-color: gray;
+    }
 }
