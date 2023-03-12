@@ -1,5 +1,9 @@
-let denied = document.getElementsByClassName("denied");
-denied[0].addEventListener("click", notAllowed);
+let denied = document.querySelector(".denied");
+let errorBox = document.querySelector("#unavailableDiv");
+denied.addEventListener("click", notAllowed);
 function notAllowed() {
-    alert("Non disponible pour l'instant...");
+    errorBox.classList.remove("none");
+    setTimeout(() => {
+        errorBox.classList.add("none");
+    }, 5000);
 }

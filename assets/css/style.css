@@ -188,3 +188,17 @@ footer p {
         border-bottom-color: gray;
     }
 }
+
+#unavailableDiv {
+    padding: 1%;
+    background-color: red;
+    border: 1px solid darkred;
+    width: 80%;
+    margin: 1% auto;
+    border-radius: 5px;
+    color: white;
+}
+
+.none {
+    display: none;
+}
