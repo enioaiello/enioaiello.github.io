@@ -1,0 +1,32 @@
+#text {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-size: 25px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#cursor {
+  display: inline-block;
+  vertical-align: middle;
+  width: 2.5px;
+  height: 20px;
+  animation-name: cursorMove;
+  animation-duration: .75s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cursorMove {
+  from 
+  {
+    background-color: transparent;
+  }
+  50%
+  {
+    background-color: white;
+  }
+}
