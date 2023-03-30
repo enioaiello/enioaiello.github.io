@@ -35,6 +35,10 @@ nav ul li a {
     font-size: 2vh;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
 #homeBody {
     background: url("../img/background.png") no-repeat;
     background-attachment: fixed;
@@ -104,6 +108,7 @@ article {
     text-align: center;
     margin-bottom: 1%;
     border-radius: 5px;
+    height: 25vh;
 }
 
 a {
