@@ -36,12 +36,16 @@ nav ul li a {
     font-size: 2vh;
 }
 
+nav ul li a:hover {
+    transition: 200ms;
+}
+
 h1 {
     font-size: 3rem;
 }
 
 #homeBody {
-    background: url("../img/background.png") no-repeat;
+    background: url("https://4kwallpapers.com/images/wallpapers/big-sur-mountains-night-dark-macos-big-sur-stock-california-3840x2160-1493.jpg") no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -62,7 +66,7 @@ h1 {
     color: white;
 }
 
-#profile {
+#mainDiv img {
     width: 15%;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -198,4 +202,27 @@ footer p {
 .uniqueArticleLink {
     color: black;
     text-decoration: none;
+}
+
+@media (max-width: 576px) {
+    nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul li a {
+        text-align: center;
+    }
+
+    #mainDiv img {
+        width: 50%;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    article {
+        width: 100%;
+    }
 }
