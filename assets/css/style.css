@@ -52,14 +52,23 @@ h1 {
 }
 
 #mainDiv {
-    width: 80%;
-    margin: 0 auto;
+    /*width: 80%;*/
+    /*margin: 0 auto;*/
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*-ms-transform: translate(-50%, -50%);*/
+    /*transform: translate(-50%, -50%);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    /*background: url("https://4kwallpapers.com/images/wallpapers/big-sur-mountains-night-dark-macos-big-sur-stock-california-3840x2160-1493.jpg") no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
 }
 
 #mainDiv h2 {
@@ -229,4 +238,10 @@ footer p {
     article {
         width: 100%;
     }
+}
+
+#servicesDiv,
+#socialDiv {
+    width: 80%;
+    margin: 0 auto;
 }
