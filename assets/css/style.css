@@ -97,8 +97,7 @@ p {
     margin-top: 1%;
 }
 
-#servicesDiv,
-#socialDiv {
+#servicesDiv, #socialDiv {
     width: 80%;
     margin: 0 auto;
 }
@@ -112,6 +111,7 @@ p {
     border-radius: 5px;
     padding: 2% 6%;
     margin: 1%;
+    transition: 200ms;
 }
 
 .otherDiv {
@@ -136,8 +136,9 @@ article img {
 }
 
 .button:hover {
-    background-color: gray;
+    background-color: darkgray;
     border: 2px solid darkgray;
+    color: white;
 }
 
 #unavailableDiv {
