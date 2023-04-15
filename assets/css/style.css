@@ -57,6 +57,7 @@ nav ul li a:hover {
 
 h1 {
     font-size: 3rem;
+    color: white;
 }
 
 #homeBody {
@@ -78,7 +79,6 @@ h1 {
 #mainDiv img {
     width: 15%;
     border-radius: 50%;
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     transition: transform .2s;
     transition: 200ms;
 }
@@ -86,10 +86,6 @@ h1 {
 #mainDiv img:hover {
     transform: scale(1.05);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-h1 {
-    color: white;
 }
 
 #whiteTitle {
@@ -136,6 +132,11 @@ article {
     margin: 1% 0;
     border-radius: 5px;
     background-color: lightgray;
+    transition: transform .2s;
+}
+
+article:hover {
+    transform: scale(1.05);
 }
 
 article img {
