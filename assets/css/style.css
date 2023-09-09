@@ -1,251 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
+    transition: 200ms;
 }
 
-body {
-    margin: 0;
+::selection {
+    background-color: #000000;
+    color: #ffffff;
 }
 
 header {
-    background-color: black;
-    position: sticky;
-    top: 0;
-    z-index: 9999999;
-}
-
-#mainHeader {
-    background-color: transparent;
-}
-
-nav ul {
+    background-color: #ffffff;
     width: 80%;
     margin: 0 auto;
-    list-style-type: none;
-    padding: 0;
+    padding: 10px;
 }
 
-nav ul li {
-    display: inline-block;
-    padding: 1%;
-}
-
-nav ul li a {
-    color: gray;
-    text-decoration: none;
-    font-size: 2vh;
-}
-
-nav ul li a:hover {
-    transition: 200ms;
-}
-
-nav ul li .activeItem {
-    color: white;
-}
-
-nav ul li .activeItem:hover {
-    border-bottom: 2px solid white;
-    padding-bottom: 5px;
-}
-
-nav ul li a:hover {
-    border-bottom: 2px solid gray;
-    padding-bottom: 5px;
-    animation: border-animation 0.5s normal;
-}
-
-h1 {
-    font-size: 3rem;
-    color: white;
-}
-
-#homeBody {
-    background: url("https://4kwallpapers.com/images/wallpapers/macos-ventura-macos-13-macos-2022-stock-dark-mode-5k-retina-6016x6016-8133.jpg") no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
-
-#mainDiv {
-    text-align: center;
+header nav {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 80vh;
+    justify-content: space-between;
 }
 
-#mainDiv img {
-    width: 15%;
+header nav img {
     border-radius: 50%;
-    transition: transform .2s;
-    transition: 200ms;
+    width: 50px;
+    height: 50px;
 }
 
-#mainDiv img:hover {
-    transform: scale(1.05);
+header nav img:hover {
+    transform: scale(1.25);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-#whiteTitle {
-    color: white;
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-#whiteParagraph {
-    color: white;
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-p {
-    margin-top: 1%;
-}
-
-#servicesDiv, #socialDiv {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.button {
-    display: inline-block;
+header nav ul li a {
     text-decoration: none;
-    color: white;
-    background-color: black;
+    color: #000000;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+}
+
+main * {
+    margin: 1vh 0;
+}
+
+#branding {
+    width: 100%;
+    height: 40vh;
+    background: url("../img/background.jpg") no-repeat fixed center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#branding * {
+    margin: 0.2%;
+}
+
+#branding .button {
+    background: #ffffffee;
     border: 2px solid black;
-    border-radius: 5px;
-    padding: 2% 6%;
-    margin: 1%;
-    transition: 200ms;
-}
-
-.otherDiv {
-    width: 80%;
-    margin: 0 auto;
-    text-align: left;
-}
-
-article {
-    display: inline-block;
-    width: 48%;
-    padding: 1% 0.5%;
-    font-size: 2vh;
-    text-align: center;
-    margin: 1% 0;
-    border-radius: 5px;
-    background-color: lightgray;
-    transition: transform .2s;
-}
-
-article:hover {
-    transform: scale(1.05);
-}
-
-article img {
-    width: 9%;
-}
-
-.button:hover {
-    background-color: darkgray;
-    border: 2px solid darkgray;
-    color: white;
-}
-
-#unavailableDiv {
+    border-radius: 10px;
     padding: 1%;
-    background-color: red;
-    border: 1px solid darkred;
-    width: 80%;
-    margin: 1% auto;
-    border-radius: 5px;
-    color: white;
-}
-
-a {
-    color: blue;
-    text-decoration: underline;
-}
-
-.uniqueArticleLink {
     color: black;
     text-decoration: none;
 }
 
-article h3 {
-    font-weight: bold;
-    font-size: 1.3rem;
+#branding .button:hover {
+    background: #ffffffaa;
 }
 
-.leftArticle {
-    float: left;
-}
-
-.rightArticle {
-    float: right;
-}
-
-.clear {
-    clear: both;
-}
-
-#rightArticleContent {
-    text-align: right;
-}
-
-img {
-    width: 25vw;
-    border-radius: 5px;
-}
-
-.denied {
-    cursor: not-allowed;
-}
-
-footer {
-    text-align: center;
-}
-
-footer {
-    background-color: black;
-}
-
-footer p {
-    padding: 1%;
-    color: white;
-    margin: 0;
-}
-
-.none {
-    display: none;
-}
-
-#errorDiv {
-    width: 100%;
-    height: 88vh;
+#about, #projects, #downloads, #directory {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
     flex-direction: column;
 }
 
-@media (max-width: 576px) {
-    nav ul {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+footer {
+    padding: 5vh 0;
+    text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+    ::selection {
+        background-color: #ffffff;
+        color: #000000;
     }
 
-    nav ul li a {
-        text-align: center;
+    header {
+        background-color: #000000;
     }
 
-    #mainDiv img {
-        width: 50%;
-        border-radius: 50%;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    header nav ul li a {
+        text-decoration: none;
+        color: #ffffff;
     }
 
-    article {
-        width: 100%;
+    nav ul li a:hover {
+        border-bottom: 2px solid white;
+        padding-bottom: 5px;
+    }
+
+    body {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+    #branding h1, #branding h2 {
+        color: black;
     }
 }
