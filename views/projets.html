@@ -15,7 +15,7 @@
 <body>
 <header>
     <nav>
-        <div id="logo">
+        <div class="logo">
             <img src="../assets/img/favicon.png" alt="Logo du site">
             <h1>Enio Aiello</h1>
         </div>
@@ -27,6 +27,11 @@
         </ul>
     </nav>
 </header>
+<ul id="navMobile">
+    <li><a href="../index.html"><i class="fa-solid fa-house"></i></a></li>
+    <li><a href="./projets.html"><i class="fa-solid fa-rectangle-list"></i></a></li>
+    <li><a href="./ressources.html"><i class="fa-solid fa-floppy-disk"></i></a></li>
+</ul>
 <main>
     <section id="projets">
         <h2>Mes projets</h2>
@@ -54,15 +59,31 @@
                 <a href="https://github.com/enioaiello/admin-services" target="_blank">Voir plus</a>
             </div>
         </div>
+        <div class="projet">
+            <img src="../assets/img/projets/articlesui.png" alt="ArticlesUI">
+            <div class="content">
+                <h3>ArticlesUI</h3>
+                <p>Une simple feuille de style pour créer du contenu dynamique et responsive pour son site Internet, inclut la possibilité de rajouter des scripts.</p>
+                <a href="https://github.com/enioaiello/articlesui" target="_blank">Voir plus</a>
+            </div>
+        </div>
         <a href="https://github.com/enioaiello?tab=repositories" class="button more">Consulter GitHub</a>
     </section>
+    <div id="mobileSocial">
+        <hr>
+        <ul class="social">
+            <li><a href="https://github.com/enioaiello" class="github" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/enioaiello/" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://discord.gg/uxhTP3fv6F" class="discord" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+        </ul>
+    </div>
 </main>
 <footer>
     <p>&copy; 2024 Enio Aiello - Tous droits réservés</p>
     <p id="separator">
         |
     </p>
-    <ul id="social">
+    <ul class="social">
         <li><a href="https://github.com/enioaiello" id="github" target="_blank"><i class="fa-brands fa-github"></i></a>
         </li>
         <li><a href="https://www.linkedin.com/in/enioaiello/" id="linkedin" target="_blank"><i

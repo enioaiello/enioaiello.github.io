@@ -37,7 +37,6 @@ main #ressources .ressource {
 
 main .social {
     width: 100%;
-    height: 50vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -56,4 +55,15 @@ main .social li a {
 
 footer {
     margin-top: 2vh;
+}
+
+@media (max-width: 768px) {
+    main #projets .projet,
+    main #ressources .ressource {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 1rem;
+    }
 }
