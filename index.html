@@ -2,96 +2,86 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Site Web officiel d'Enio Aiello, vous y retrouverez des projets, ressources et plus...">
     <title>Enio Aiello</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="assets/images/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="assets/img/favicon.png" alt="Logo du site">
-                <h1>Enio Aiello</h1>
-            </div>
-            <ul id="navDesktop">
-                <li><a href="./index.html">Accueil</a></li>
-                <li><a href="./views/projets.html">Projets</a></li>
-                <li><a href="./views/ressources.html">Ressources</a></li>
-                <li><a href="./views/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <ul id="navMobile">
-        <li><a href="./index.html"><i class="fa-solid fa-house"></i></a></li>
-        <li><a href="./views/projets.html"><i class="fa-solid fa-rectangle-list"></i></a></li>
-        <li><a href="./views/ressources.html"><i class="fa-solid fa-floppy-disk"></i></a></li>
-    </ul>
-    <main>
-        <section id="presentation">
-            <h2>Enio Aiello</h2>
-            <p>Apprenti développeur Web et Web mobile.</p>
-        </section>
-        <h2>Mes projets</h2>
-        <section id="projets">
-            <div class="projet">
-                <img src="assets/img/projets/corundum.png" alt="Corundum">
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <img src="assets/images/logo.png" alt="Logo d'Enio Aiello" class="logo">
+                <div class="separator"></div>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#home" class="link active">Accueil</a></li>
+                    <li class="menu-item"><a href="#projects" class="link">Projets</a></li>
+                    <li class="menu-item"><a href="#contact" class="link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section id="home" class="section">
                 <div class="content">
-                    <h3>Corundum</h3>
-                    <p>Un simple script pour Windows 10 et 11 permettant l'administration et la maintenance d'un poste de travail.</p>
-                    <a href="https://github.com/enioaiello/corundum" target="_blank">Voir plus</a>
+                    <h1 class="title">Enio Aiello</h1>
+                    <p class="description">Développeur web et passionné d'informatique.</p>
+                    <a href="#projects" class="button">En savoir plus</a>
                 </div>
-            </div>
-            <div class="projet">
-                <img src="assets/img/projets/vador.png" alt="Vador">
-                <div class="content">
-                    <h3>Vador</h3>
-                    <p>Un "moteur de recherche" pour les logiciels libres.</p>
-                    <a href="https://github.com/enioaiello/vador" target="_blank">Voir plus</a>
+                <img src="assets/images/profile.png" alt="Photo de profil d'Enio Aiello" class="profile-picture">
+            </section>
+            <section id="projects" class="section">
+                <h2 class="title">Projets</h2>
+                <div class="projects">
+                    <div class="project">
+                        <img src="assets/images/projects/admin-services.png" alt="Projet Admin Services" class="project-image">
+                        <h3 class="project-title">Admin Services</h3>
+                        <p class="project-description">Un projet qui m'a permis d'apprendre les technologies front-end (HTML, CSS et JavaScript).</p>
+                        <p class="project-container-link"><a href="https://github.com/enioaiello/admin-services" target="_blank" class="project-link">Voir le dépôt GitHub</a></p>
+                    </div>
+                    <div class="project">
+                        <img src="assets/images/projects/vador.png" alt="Projet Vador" class="project-image">
+                        <h3 class="project-title">Vador</h3>
+                        <p class="project-description">Un simple "moteur de recherche" permettant de rechercher des programmes FOSS et de les téléchargés depuis leur lien officiel.</p>
+                        <p class="project-container-link"><a href="https://github.com/enioaiello/vador" target="_blank" class="project-link">Voir le dépôt GitHub</a></p>
+                    </div>
                 </div>
-            </div>
-            <div class="projet">
-                <img src="assets/img/projets/admin-services.png" alt="Admin Services">
-                <div class="content">
-                    <h3>Admin Services</h3>
-                    <p>Un site conçu à la base pour apprendre l'HTML, CSS ainsi que le JavaScript.</p>
-                    <a href="https://github.com/enioaiello/admin-services" target="_blank">Voir plus</a>
+            </section>
+            <section id="contact" class="section">
+                <h2 class="title">Contact</h2>
+                <div class="contact">
+                    <div class="github">
+                        <i class="ri-github-fill icon"></i>
+                        <a href="https://github.com/enioaiello/" target="_blank" class="link">github.com/enioaiello</a>
+                    </div>
+                    <div class="linkedin">
+                        <i class="ri-linkedin-box-fill icon"></i>
+                        <a href="https://www.linkedin.com/in/enioaiello/" target="_blank" class="link">linkedin.com/in/enioaiello</a>
+                    </div>
+                    <div class="twitter">
+                        <i class="ri-twitter-x-fill icon"></i>
+                        <a href="https://twitter.com/enioaiello" target="_blank" class="link">x.com/enioaiello</a>
+                    </div>
+                    <div class="discord">
+                        <i class="ri-discord-fill icon"></i>
+                        <a href="https://discord.gg/uxhTP3fv6F" target="_blank" class="link">discord.gg/uxhTP3fv6F</a>
+                    </div>
+                    <div class="instagram">
+                        <i class="ri-instagram-fill icon"></i>
+                        <a href="https://www.instagram.com/aielloenio" target="_blank" class="link">instagram.com/aielloenio</a>
+                    </div>
+                    <div class="youtube">
+                        <i class="ri-youtube-fill icon"></i>
+                        <a href="https://www.youtube.com/@enioaiello" target="_blank" class="link">youtube.com/@enioaiello</a>
+                    </div>
                 </div>
-            </div>
-            <a href="./views/projets.html" class="button more">Voir plus de projets</a>
-        </section>
-        <hr>
-        <section id="ressources">
-            <h2>Mes ressources</h2>
-            <div class="ressource">
-                <h3>Je quitte Microsoft. Et vous devriez le faire aussi.</h3>
-                <p>Un article plutôt important concernant ce qu'il se passe avec Microsoft.</p>
-                <a href="./assets/files/article.pdf" target="_blank">Consulter</a>
-            </div>
-            <a href="./views/ressources.html" class="button more">Voir plus de ressources</a>
-        </section>
-        <div id="mobileSocial">
-            <hr>
-            <ul class="social">
-                <li><a href="https://github.com/enioaiello" class="github" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/enioaiello/" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://discord.gg/uxhTP3fv6F" class="discord" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
-            </ul>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Enio Aiello - Tous droits réservés</p>
-        <p id="separator">
-            |
-        </p>
-        <ul class="social">
-            <li><a href="https://github.com/enioaiello" class="github" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/enioaiello/" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="https://discord.gg/uxhTP3fv6F" class="discord" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
-        </ul>
-    </footer>
-    <script src="https://kit.fontawesome.com/fd2fbbb747.js" crossorigin="anonymous"></script>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="copyright">&copy; 2025 - Enio Aiello</p>
+        </footer>
+    </div>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
