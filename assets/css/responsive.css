@@ -1,0 +1,75 @@
+@media (max-width: 624px) {
+    .main #home .content {
+        width: 100%;
+        text-align: center;
+
+        .button {
+            width: 100%;
+        }
+    }
+
+    .main #home .profile-picture {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        display: none;
+    }
+
+    .main #home {
+        padding: 0 5%;
+    }
+
+    .main #home .content {
+        font-size: 1.25rem;
+    }
+
+    .main #projects .projects {
+        flex-direction: column;
+    }
+
+    .main #projects .projects .project-image {
+        width: 100%;
+    }
+
+    .main #projects .projects .project-title {
+        font-size: 1.25rem;
+    }
+
+    .main #projects .projects .project-description {
+        font-size: 1rem;
+    }
+
+    .main #projects .projects .project-container-link {
+        flex-direction: column;
+    }
+
+    .main #projects .projects .project-link {
+        font-size: 1rem;
+    }
+
+    .main #contact .contact {
+        font-size: 1.25rem;
+    }
+
+    .github,
+    .linkedin,
+    .bluesky,
+    .discord,
+    .instagram,
+    .youtube {
+        flex-direction: column;
+
+        .brand {
+            flex-direction: column;
+            margin: 0 0 1vh 0;
+        }
+    }
+
+    .main #projects,
+    .main #contact {
+        padding: 1vh 5%;
+    }
+}

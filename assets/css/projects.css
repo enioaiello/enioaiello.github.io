@@ -1,0 +1,36 @@
+.category-container,
+.project-language {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .category,
+    .language {
+        padding: 2%;
+        margin: 0 1vw 0 0;
+        background-color: var(--gray-color);
+        color: var(--white-color);
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    .language {
+        cursor: default;
+    }
+
+    .category:hover,
+    .language:hover {
+        background-color: var(--green-color);
+    }
+}
+
+.project-language {
+    justify-content: center;
+    margin: 2vh 0;
+}
+
+#web,
+#scripts {
+    scroll-margin-top: 81px;
+}

@@ -1,0 +1,4 @@
+.main #projects .projects .project:hover,
+.main #ressources .ressources .ressource:hover {
+    background-color: var(--gray-color);
+}

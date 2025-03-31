@@ -6,8 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Enio Aiello</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
     <link rel="icon" href="assets/images/logo.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <meta property="og:title" content="Portfolio">
+    <meta property="og:description" content="Le portfolio d'Enio Aiello. Tout simplement.">
+    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:url" content="https://enioaiello.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Enio Aiello">
 </head>
 <body>
     <div class="container">
@@ -18,6 +27,7 @@
                 <ul class="menu">
                     <li class="menu-item"><a href="#home" class="link active">Accueil</a></li>
                     <li class="menu-item"><a href="#projects" class="link">Projets</a></li>
+                    <li class="menu-item"><a href="#ressources" class="link">Ressources</a></li>
                     <li class="menu-item"><a href="#contact" class="link">Contact</a></li>
                 </ul>
             </nav>
@@ -43,37 +53,67 @@
                     <div class="project">
                         <img src="assets/images/projects/vador.png" alt="Projet Vador" class="project-image">
                         <h3 class="project-title">Vador</h3>
-                        <p class="project-description">Un simple "moteur de recherche" permettant de rechercher des programmes FOSS et de les téléchargés depuis leur lien officiel.</p>
+                        <p class="project-description">Un simple "moteur de recherche" permettant de rechercher des programmes FOSS et de les télécharger depuis leur lien officiel.</p>
                         <p class="project-container-link"><a href="https://github.com/enioaiello/vador" target="_blank" class="project-link">Voir le dépôt GitHub</a></p>
                     </div>
                 </div>
                 <a href="views/projects.html" class="link"><i class="ri-folder-open-fill"></i> En voir plus</a>
             </section>
+            <section id="ressources" class="section">
+                <h2 class="title">Ressources</h2>
+                <div class="ressources">
+                    <div class="ressource">
+                        <img src="assets/images/ressources/je-quitte-microsoft.png" alt="Je quitte Microsoft. Et vous devriez le faire aussi" class="ressource-image">
+                        <h3 class="ressource-title">Je quitte Microsoft. Et vous devriez le faire aussi.</h3>
+                        <p class="ressource-date">18 mai 2024</p>
+                        <p class="ressource-description">Un article périmé expliquant ma situation avec Microsoft.</p>
+                        <p class="ressource-container-link"><a href="assets/pdf/je-quitte-microsoft.pdf" class="ressource-link">Consulter</a></p>
+                    </div>
+                </div>
+            </section>
             <section id="contact" class="section">
                 <h2 class="title">Contact</h2>
                 <div class="contact">
                     <div class="github">
-                        <i class="ri-github-fill icon"></i>
+                        <div class="brand">
+                            <i class="ri-github-fill icon"></i>
+                            <h3 class="subtitle">GitHub</h3>
+                        </div>
                         <a href="https://github.com/enioaiello/" target="_blank" class="link">github.com/enioaiello</a>
                     </div>
                     <div class="linkedin">
-                        <i class="ri-linkedin-box-fill icon"></i>
+                        <div class="brand">
+                            <i class="ri-linkedin-box-fill icon"></i>
+                            <h3 class="subtitle">LinkedIn</h3>
+                        </div>
                         <a href="https://www.linkedin.com/in/enioaiello/" target="_blank" class="link">linkedin.com/in/enioaiello</a>
                     </div>
-                    <div class="twitter">
-                        <i class="ri-twitter-x-fill icon"></i>
-                        <a href="https://twitter.com/enioaiello" target="_blank" class="link">x.com/enioaiello</a>
+                    <div class="bluesky">
+                        <div class="brand">
+                            <i class="ri-bluesky-fill icon"></i>
+                            <h3 class="subtitle">Bluesky</h3>
+                        </div>
+                        <a href="https://bsky.app/profile/enioaiello.bsky.social" target="_blank" class="link">bsky.app/profile/enioaiello.bsky.social</a>
                     </div>
                     <div class="discord">
-                        <i class="ri-discord-fill icon"></i>
-                        <a href="https://discord.gg/QauWNAJH8h" target="_blank" class="link">discord.gg/uxhTP3fv6F</a>
+                        <div class="brand">
+                            <i class="ri-discord-fill icon"></i>
+                            <h3 class="subtitle">Serveur Discord</h3>
+                        </div>
+                        <a href="https://discord.gg/AHYcDWf5WV" target="_blank" class="link">discord.gg/AHYcDWf5WV</a>
                     </div>
                     <div class="instagram">
-                        <i class="ri-instagram-fill icon"></i>
+                        <div class="brand">
+                            <i class="ri-instagram-fill icon"></i>
+                            <h3 class="subtitle">Instagram</h3>
+                        </div>
                         <a href="https://www.instagram.com/aielloenio" target="_blank" class="link">instagram.com/aielloenio</a>
                     </div>
                     <div class="youtube">
-                        <i class="ri-youtube-fill icon"></i>
+                        <div class="brand">
+                            <i class="ri-youtube-fill icon"></i>
+                            <h3 class="subtitle">YouTube</h3>
+                        </div>
                         <a href="https://www.youtube.com/@enioaiello" target="_blank" class="link">youtube.com/@enioaiello</a>
                     </div>
                 </div>

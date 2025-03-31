@@ -1,0 +1,41 @@
+@media (prefers-color-scheme: dark) {
+    ::selection {
+        background-color: var(--green-color);
+        color: var(--black-color);
+    }
+
+    .header {
+        background-color: var(--black-color);
+    }
+
+    .nav .menu .menu-item .link {
+        color: var(--white-color);
+        text-decoration: none;
+    }
+
+    .main {
+        background-color: var(--black-color);
+        color: var(--white-color);
+    }
+
+    .main #home {
+        width: 100%;
+        height: 60vh;
+        padding: 0 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: url("../images/wallpapers/dark-mode.jpg") no-repeat fixed center;
+        background-size: cover;
+    }
+
+    .main #home .content {
+        color: var(--white-color);
+    }
+
+    .footer {
+        background-color: var(--black-color);
+        color: var(--white-color);
+    }
+}
