@@ -176,6 +176,12 @@
     align-items: center;
     flex-wrap: wrap;
 
+    .project,
+    .ressource {
+        width: 100%;
+        padding: 2vh 0;
+    }
+
     .project-image,
     .ressource-image {
         width: 100%;
@@ -198,6 +204,10 @@
         text-align: center;
         font-size: 1.25rem;
         margin: 1vh 0;
+    }
+
+    .ressource-date {
+        color: #ffffffaa;
     }
 
     .project-container-link,
