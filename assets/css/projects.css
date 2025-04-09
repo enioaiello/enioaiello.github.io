@@ -26,8 +26,13 @@
     justify-content: flex-start;
     align-items: center;
 
+    .separator {
+        flex: 1;
+    }
+
     .category,
-    .language {
+    .language,
+    .button {
         padding: 2%;
         margin: 0 1vw 0 0;
         background-color: var(--gray-color);
@@ -36,12 +41,14 @@
         border-radius: 10px;
     }
 
-    .language {
+    .language,
+    .button {
         cursor: default;
     }
 
     .category:hover,
-    .language:hover {
+    .language:hover,
+    .button:hover {
         background-color: var(--green-color);
     }
 }
