@@ -1,0 +1,32 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    * {
+        margin: 1vh 0;
+    }
+}
+
+.title {
+    font-size: 2.4rem;
+}
+
+.text {
+    font-size: 1.8rem;
+}
+
+.button {
+    padding: 1% 5%;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: var(--white-color);
+    color: var(--green-color);
+}
