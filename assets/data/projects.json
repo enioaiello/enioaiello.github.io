@@ -60,11 +60,11 @@
         "category": "Scripts"
     },
     {
-        "name": "Laravel avec Docker",
-        "description": "Un modèle avec Docker (docker-compose) pour Laravel 12 utilisant Apache, MySQL.",
+        "name": "Solent",
+        "description": "Un modèle avec Docker Composer pour Laravel 12 utilisant Apache, MySQL.",
         "image": "../assets/images/projects/laravel-project-template.png",
         "languages": ["Docker"],
-        "github": ["corundumproject", "maintenance"],
-        "category": "Modèles"
+        "github": ["enioaiello", "solent"],
+        "category": "Templates"
     }
 ]
