@@ -1,0 +1,70 @@
+[
+    {
+        "name": "Admin Services",
+        "description": "Plateforme web permettant aux utilisateurs de déployer et gérer facilement leurs applications en ligne.",
+        "image": "../assets/images/projects/admin-services.png",
+        "languages": ["PHP", "MySQL", "Laravel"],
+        "github": ["enioaiello", "admin-services"],
+        "category": "Web"
+    },
+    {
+        "name": "Admin Services (legacy)",
+        "description": "Un projet qui m'a permis d'apprendre les technologies front-end (HTML, CSS et JavaScript).",
+        "image": "../assets/images/projects/admin-services-legacy.png",
+        "languages": ["HTML", "CSS", "JS"],
+        "github": ["enioaiello", "admin-services-legacy"],
+        "link": "https://enioaiello.github.io/admin-services-legacy",
+        "category": "Web"
+    },
+    {
+        "name": "Vador",
+        "description": "Un simple \"moteur de recherche\" permettant de rechercher des programmes FOSS et de les téléchargés depuis leur lien officiel.",
+        "image": "../assets/images/projects/vador.png",
+        "languages": ["HTML", "CSS", "JS"],
+        "github": ["enioaiello", "vador"],
+        "link": "https://enioaiello.github.io/vador",
+        "category": "Web"
+    },
+    {
+        "name": "Horizon",
+        "description": "Le site Web de mon serveur Discord.",
+        "image": "../assets/images/projects/horizon.png",
+        "languages": ["HTML", "CSS"],
+        "github": ["enioaiello", "horizon"],
+        "link": "https://enioaiello.github.io/horizon",
+        "category": "Web"
+    },
+    {
+        "name": "Atomix",
+        "description": "Un projet expérimental de framework CSS compilé via SCSS. Ultra simple à maitriser.",
+        "image": "../assets/images/projects/atomix.png",
+        "languages": ["SCSS", "CSS"],
+        "github": ["enioaiello", "atomix"],
+        "category": "Web"
+    },
+    {
+        "name": "Quick",
+        "description": "Un site permettant aux utilisateurs macOS (et Linux) de télécharger leurs applications en une seule commande.",
+        "image": "../assets/images/projects/quick.png",
+        "languages": ["HTML", "CSS", "JS", "Bootstrap"],
+        "github": ["corundumproject", "quick"],
+        "link": "https://corundumproject.github.io/quick",
+        "category": "Web"
+    },
+    {
+        "name": "Corundum maintenance",
+        "description": "Un simple script permettant l'administration et la maintenance de poste de travail Microsoft Windows.",
+        "image": "../assets/images/projects/corundum-maintenance.png",
+        "languages": ["Batch"],
+        "github": ["corundumproject", "maintenance"],
+        "category": "Scripts"
+    },
+    {
+        "name": "Laravel avec Docker",
+        "description": "Un modèle avec Docker (docker-compose) pour Laravel 12 utilisant Apache, MySQL.",
+        "image": "../assets/images/projects/laravel-project-template.png",
+        "languages": ["Docker"],
+        "github": ["corundumproject", "maintenance"],
+        "category": "Modèles"
+    }
+]
