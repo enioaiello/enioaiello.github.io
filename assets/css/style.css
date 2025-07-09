@@ -12,6 +12,7 @@
 :root {
     --black-color: #212529;
     --gray-color: #495057;
+    --lightgray-color: #D3D3D3FF;
     --white-color: #F8F9FA;
     --green-color: #588157;
 }
@@ -86,6 +87,8 @@
 
 .main #home,
 .main #projects,
+.main #tools,
+.main #ressources,
 .main #contact {
     scroll-margin-top: 81px;
 }
@@ -139,6 +142,7 @@
 
 .main #projects,
 .main #ressources,
+.main #tools,
 .main #contact {
     width: 100%;
     padding: 1vh 10%;
@@ -152,7 +156,8 @@
 }
 
 .main #projects,
-.main #ressources {
+.main #ressources,
+.main #tools {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,7 +173,8 @@
 }
 
 .main #projects .projects,
-.main #ressources .ressources {
+.main #ressources .ressources,
+.main #tools .tools {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -177,9 +183,18 @@
     flex-wrap: wrap;
 
     .project,
-    .ressource {
+    .ressource,
+    .tool {
         width: 100%;
         padding: 2vh 0;
+    }
+
+    .tool {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3vh 1vw;
     }
 
     .project-image,
@@ -190,16 +205,22 @@
     }
 
     .project-title,
-    .ressource-title {
+    .ressource-title,
+    .tool-title {
         width: 100%;
         text-align: center;
         font-size: 1.5rem;
         margin: 1vh 0;
     }
 
+    .tool-title {
+        width: auto;
+    }
+
     .project-description,
     .ressource-description,
-    .ressource-date {
+    .ressource-date,
+    .tool-description {
         width: 100%;
         text-align: center;
         font-size: 1.25rem;
@@ -207,7 +228,7 @@
     }
 
     .ressource-date {
-        color: #ffffffaa;
+        color: var(--gray-color);
     }
 
     .project-container-link,
@@ -228,10 +249,25 @@
         color: var(--green-color);
         text-decoration: none;
     }
+
+    .tool-button {
+        display: flex;
+        background-color: var(--green-color);
+        color: var(--white-color);
+        text-decoration: none;
+        padding: 1%;
+        border-radius: 50%;
+    }
+
+    .tool-button:hover {
+        background-color: var(--white-color);
+        color: var(--green-color);
+    }
 }
 
 .main #projects .projects .project,
-.main #ressources .ressources .ressource {
+.main #ressources .ressources .ressource,
+.main #tools .tools .tool {
     margin: 1vh 0;
     border-radius: 10px;
 }
@@ -254,7 +290,8 @@
 .bluesky,
 .discord,
 .instagram,
-.youtube {
+.youtube,
+.threads {
     width: 100%;
     display: flex;
     flex-direction: row;

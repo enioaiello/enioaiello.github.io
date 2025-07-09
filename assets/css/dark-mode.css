@@ -1,7 +1,7 @@
 @media (prefers-color-scheme: dark) {
     ::selection {
         background-color: var(--green-color);
-        color: var(--black-color);
+        color: var(--white-color);
     }
 
     .header {
@@ -32,6 +32,16 @@
 
     .main #home .content {
         color: var(--white-color);
+    }
+
+    .ressource-date {
+        color: #ffffffaa !important;
+    }
+
+    .main #projects .projects .project:hover,
+    .main #ressources .ressources .ressource:hover,
+    .main #tools .tools .tool:hover {
+        background-color: var(--gray-color);
     }
 
     .footer {

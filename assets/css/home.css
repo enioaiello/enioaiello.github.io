@@ -1,4 +1,12 @@
+.main #tools .tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .main #projects .projects .project:hover,
-.main #ressources .ressources .ressource:hover {
-    background-color: var(--gray-color);
+.main #ressources .ressources .ressource:hover,
+.main #tools .tools .tool:hover {
+    background-color: var(--lightgray-color);
 }

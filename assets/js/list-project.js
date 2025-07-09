@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Chemin vers le fichier JSON
-    const jsonFilePath = "https://enioaiello.github.io/assets/data/projects.json";
+    const jsonFilePath = "/assets/data/projects.json";
 
     // Mapping des icônes Remixicon pour les langages/outils
     const languageIcons = {
