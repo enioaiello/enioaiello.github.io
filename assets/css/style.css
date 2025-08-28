@@ -215,6 +215,7 @@
 
     .tool-title {
         width: auto;
+        text-align: left;
     }
 
     .project-description,

@@ -11,6 +11,18 @@
     .main #home .profile-picture {
         display: none;
     }
+
+    .github,
+    .linkedin,
+    .bluesky,
+    .discord,
+    .instagram,
+    .youtube,
+    .threads {
+        .link .base {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -59,7 +71,8 @@
     .bluesky,
     .discord,
     .instagram,
-    .youtube {
+    .youtube,
+    .threads {
         flex-direction: column;
 
         .brand {
