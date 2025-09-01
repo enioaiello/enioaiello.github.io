@@ -1,0 +1,51 @@
+[
+  { "name": "HTML", "category": "langages" },
+  { "name": "CSS", "category": "langages" },
+  { "name": "JavaScript", "category": "langages" },
+  { "name": "PHP", "category": "langages" },
+  { "name": "MySQL", "category": "langages" },
+  { "name": "JSON", "category": "langages" },
+  { "name": "AJAX", "category": "langages" },
+  { "name": "SASS/SCSS", "category": "langages" },
+  { "name": "batch", "category": "langages" },
+  { "name": "shell", "category": "langages" },
+
+  { "name": "Laravel", "category": "frameworks_cms" },
+  { "name": "WordPress", "category": "frameworks_cms" },
+  { "name": "Bootstrap", "category": "frameworks_cms" },
+
+  { "name": "Git", "category": "tools" },
+  { "name": "Docker", "category": "tools" },
+  { "name": "Postman", "category": "tools" },
+  { "name": "Visual Studio Code", "category": "tools" },
+  { "name": "PhpStorm", "category": "tools" },
+  { "name": "WebStorm", "category": "tools" },
+  { "name": "PyCharm", "category": "tools" },
+  { "name": "Powershell", "category": "tools" },
+  { "name": "bash", "category": "tools" },
+  { "name": "zsh", "category": "tools" },
+  { "name": "WSL", "category": "tools" },
+
+  { "name": "macOS", "category": "systems" },
+  { "name": "WindowsNT", "category": "systems" },
+  { "name": "GNU/Linux", "category": "systems" },
+  { "name": "Android", "category": "systems" },
+  { "name": "iOS", "category": "systems" },
+
+  { "name": "VirtualBox", "category": "hyp-hosted" },
+  { "name": "VMware Workstation", "category": "hyp-hosted" },
+  { "name": "VMware Fusion", "category": "hyp-hosted" },
+  { "name": "QEMU (+ KVM)", "category": "hyp-bare" },
+  { "name": "Parrallels", "category": "hyp-hosted" },
+
+  { "name": "Figma", "category": "design" },
+  { "name": "Adobe Photoshop", "category": "design" },
+  { "name": "Photopea", "category": "design" },
+
+  { "name": "Microsoft Office", "category": "office" },
+  { "name": "LibreOffice", "category": "office" },
+  { "name": "OpenOffice", "category": "office" },
+
+  { "name": "Méthodes AGILES", "category": "methodologies" },
+  { "name": "CNV (Communication Non Violente)", "category": "methodologies" }
+]
