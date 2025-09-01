@@ -10,3 +10,20 @@
 .main #tools .tools .tool:hover {
     background-color: var(--lightgray-color);
 }
+
+@media (max-width: 1024px) {
+    .main #projects .projects .project .project-link {
+        width: 100%;
+        padding: 2% 5%;
+        background-color: var(--green-color);
+        color: var(--white-color);
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    .main #projects .projects .project .project-link:hover {
+        background-color: var(--white-color);
+        color: var(--green-color);
+    }
+}
