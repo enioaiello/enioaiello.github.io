@@ -256,7 +256,7 @@
     "version": "2025.08.01"
   },
   {
-    "icon": "os/gnu-linux/ubuntu/24-04.png",
+    "icon": "os/gnu-linux/ubuntu/24.04.png",
     "name": "Ubuntu 24.04",
     "category": "os",
     "state": "not-used",
@@ -264,7 +264,7 @@
     "version": "24.04"
   },
   {
-    "icon": "os/gnu-linux/ubuntu/23-10.png",
+    "icon": "os/gnu-linux/ubuntu/23.10.png",
     "name": "Ubuntu 23.10",
     "category": "os",
     "state": "not-used",
@@ -272,7 +272,7 @@
     "version": "23.10"
   },
   {
-    "icon": "os/gnu-linux/ubuntu/22-04.png",
+    "icon": "os/gnu-linux/ubuntu/22.04.png",
     "name": "Ubuntu 22.04",
     "category": "os",
     "state": "not-used",
@@ -280,7 +280,7 @@
     "version": "22.04"
   },
   {
-    "icon": "os/gnu-linux/ubuntu-mate/18-10.png",
+    "icon": "os/gnu-linux/ubuntu-mate/18.10.png",
     "name": "Ubuntu Mate 18.10",
     "category": "os",
     "state": "not-used",
@@ -288,7 +288,7 @@
     "version": "18.10"
   },
   {
-    "icon": "os/gnu-linux/ubuntu-mate/16-10.png",
+    "icon": "os/gnu-linux/ubuntu-mate/16.10.png",
     "name": "Ubuntu Mate 16.10",
     "category": "os",
     "state": "not-used",
