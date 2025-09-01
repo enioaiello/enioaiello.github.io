@@ -1,7 +1,426 @@
 [
-    {
-        "name": "Je quitte Microsoft. Et vous devriez le faire aussi.",
-        "description": "Un article expliquant ma situation avec Microsoft.",
-        "category": "os"
-    }
+  {
+    "icon": "os/macos/sequoia.png",
+    "name": "macOS Sequoia",
+    "category": "os",
+    "state": "used",
+    "badge": "power",
+    "version": "15.5"
+  },
+  {
+    "icon": "os/macos/sonoma.png",
+    "name": "macOS Sonoma",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "14.7"
+  },
+  {
+    "icon": "os/macos/ventura.png",
+    "name": "macOS Ventura",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "13.7"
+  },
+  {
+    "icon": "os/macos/catalina.png",
+    "name": "macOS Catalina",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "10.15.7"
+  },
+  {
+    "icon": "os/macos/high-sierra.png",
+    "name": "macOS High Sierra",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "10.13.6"
+  },
+  {
+    "icon": "os/macos/sierra.png",
+    "name": "macOS Sierra",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "10.12.6"
+  },
+  {
+    "icon": "os/macos/osx-el-capitan.png",
+    "name": "OS X El Capitan",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "10.11.6"
+  },
+  {
+    "icon": "os/macos/osx-lion.png",
+    "name": "OS X Lion",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "10.7.5"
+  },
+  {
+    "icon": "os/macos/osx-snow-leopard.png",
+    "name": "OS X Snow Leopard",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "10.6.8"
+  },
+  {
+    "icon": "os/macos/8.png",
+    "name": "Mac OS 8",
+    "category": "os",
+    "state": "used",
+    "badge": "",
+    "version": "8.6"
+  },
+  {
+    "icon": "os/windows/11.png",
+    "name": "Windows 11",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "24h2"
+  },
+  {
+    "icon": "os/windows/10.png",
+    "name": "Windows 10",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "22h2"
+  },
+  {
+    "icon": "os/windows/7.png",
+    "name": "Windows 7",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "SP1"
+  },
+  {
+    "icon": "os/windows/xp.png",
+    "name": "Windows XP",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "SP3"
+  },
+  {
+    "icon": "os/ios/26.png",
+    "name": "iOS 26",
+    "category": "os",
+    "state": "used",
+    "badge": "",
+    "version": "26.0 (public beta 4)"
+  },
+  {
+    "icon": "os/ios/18.png",
+    "name": "iOS 18",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "18.6.2"
+  },
+  {
+    "icon": "os/ios/17.png",
+    "name": "iOS 17",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "17.7.2"
+  },
+  {
+    "icon": "os/ios/16.png",
+    "name": "iOS 16",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "16.7.11"
+  },
+  {
+    "icon": "os/ios/15.png",
+    "name": "iOS 15",
+    "category": "os",
+    "state": "used",
+    "badge": "",
+    "version": "15.8.4"
+  },
+  {
+    "icon": "os/ios/14.png",
+    "name": "iOS 14",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "14.8.1"
+  },
+  {
+    "icon": "os/ios/10.png",
+    "name": "iOS 10",
+    "category": "os",
+    "state": "used",
+    "badge": "",
+    "version": "10.3.3"
+  },
+  {
+    "icon": "os/ios/9.png",
+    "name": "iOS 9",
+    "category": "os",
+    "state": "used",
+    "badge": "",
+    "version": "9.3.6"
+  },
+  {
+    "icon": "os/ios/8.png",
+    "name": "iOS 8",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "8.4.1"
+  },
+  {
+    "icon": "os/ios/6.png",
+    "name": "iOS 6",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "6.1.6"
+  },
+  {
+    "icon": "os/android/11.png",
+    "name": "Android 11",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "11.0.0_r76"
+  },
+  {
+    "icon": "os/android/10.png",
+    "name": "Android 10",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "10.0.0_r75"
+  },
+  {
+    "icon": "os/android/9.png",
+    "name": "Android 9",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "9.0.0_r76"
+  },
+  {
+    "icon": "os/android/6.png",
+    "name": "Android 6",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "6.0.1_r81"
+  },
+  {
+    "icon": "os/android/4-0-4.png",
+    "name": "Android 4.0.4",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "4.0.4"
+  },
+  {
+    "icon": "os/watchos/10.png",
+    "name": "watchOS 10",
+    "category": "os",
+    "state": "used",
+    "badge": "",
+    "version": "10.6.1"
+  },
+  {
+    "icon": "os/watchos/9.png",
+    "name": "watchOS 9",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "9.6.3"
+  },
+  {
+    "icon": "os/gnu-linux/archlinux/arch-linux.png",
+    "name": "Arch Linux",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "2025.08.01"
+  },
+  {
+    "icon": "os/gnu-linux/ubuntu/24-04.png",
+    "name": "Ubuntu 24.04",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "24.04"
+  },
+  {
+    "icon": "os/gnu-linux/ubuntu/23-10.png",
+    "name": "Ubuntu 23.10",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "23.10"
+  },
+  {
+    "icon": "os/gnu-linux/ubuntu/22-04.png",
+    "name": "Ubuntu 22.04",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "22.04"
+  },
+  {
+    "icon": "os/gnu-linux/ubuntu-mate/18-10.png",
+    "name": "Ubuntu Mate 18.10",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "18.10"
+  },
+  {
+    "icon": "os/gnu-linux/ubuntu-mate/16-10.png",
+    "name": "Ubuntu Mate 16.10",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "16.10"
+  },
+  {
+    "icon": "os/gnu-linux/fedora/fedora.png",
+    "name": "Fedora 42",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "42"
+  },
+  {
+    "icon": "os/gnu-linux/fedora/fedora.png",
+    "name": "Fedora 41",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "41"
+  },
+  {
+    "icon": "os/gnu-linux/fedora/fedora.png",
+    "name": "Fedora 40",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "40"
+  },
+  {
+    "icon": "os/gnu-linux/fedora/fedora.png",
+    "name": "Fedora 39",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "39"
+  },
+  {
+    "icon": "os/gnu-linux/elementaryos/elementary.png",
+    "name": "elementaryOS 8",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "8.0"
+  },
+  {
+    "icon": "os/gnu-linux/elementaryos/elementary.png",
+    "name": "elementaryOS 7",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "7.1"
+  },
+  {
+    "icon": "os/gnu-linux/raspberrypi/raspbian.png",
+    "name": "Raspberry Pi OS",
+    "category": "os",
+    "state": "used",
+    "badge": "",
+    "version": "12.11"
+  },
+  {
+    "icon": "os/gnu-linux/raspberrypi/raspbian.png",
+    "name": "Raspbian",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "9.13"
+  },
+  {
+    "icon": "os/gnu-linux/debian/debian.png",
+    "name": "Debian 12",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "12.11"
+  },
+  {
+    "icon": "os/gnu-linux/debian/debian.png",
+    "name": "Debian 11",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "11.11"
+  },
+  {
+    "icon": "os/gnu-linux/debian/debian.png",
+    "name": "Debian 10",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "10.13"
+  },
+  {
+    "icon": "os/gnu-linux/debian/debian.png",
+    "name": "Debian 9",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "9.13"
+  },
+  {
+    "icon": "os/windows/10.png",
+    "name": "Windows 10 LTSC Entreprise 2021",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "22h2"
+  },
+  {
+    "icon": "os/windows/11.png",
+    "name": "Windows 11 LTSC Entreprise 2024",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "24h2"
+  },
+  {
+    "icon": "os/reactos.png",
+    "name": "ReactOS",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "0.4.15"
+  },
+  {
+    "icon": "os/luma.png",
+    "name": "Luma3DS",
+    "category": "os",
+    "state": "used",
+    "badge": "power",
+    "version": "13.3.3 (11.17.0-50E)"
+  }
 ]

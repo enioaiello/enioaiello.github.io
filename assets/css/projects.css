@@ -64,7 +64,18 @@
 
 .project-language {
     justify-content: flex-start;
+    flex-wrap: wrap;
     margin: 2vh 0;
+
+    .language {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.project-container-link {
+    display: flex;
+    flex-direction: row;
 }
 
 .project-description {

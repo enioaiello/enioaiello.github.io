@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Fonction pour générer un projet HTML
     const generateProjectHTML = (project) => {
-        const languageHTML = project.languages.map(language => {
+        const languageHTML = project.languages ? project.languages.map(language => {
             const icon = languageIcons[language] || ""; // Ajout de l'icône si elle existe
             return `<div class="language">${icon} ${language}</div>`;
-        }).join("");
+        }).join("") : "";
 
         const linksHTML = `
             ${project.github ? `<a href="https://github.com/${project.github.join('/')}" target="_blank" class="project-link"><i class="ri-github-fill"></i></a>` : ""}

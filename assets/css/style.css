@@ -52,7 +52,6 @@
 }
 
 .nav .separator {
-    /* flex: 2; */
     width: 35%;
 }
 
@@ -152,6 +151,42 @@
         text-align: left;
         font-size: 1.75rem;
         margin: 2vh 0;
+    }
+}
+
+.main #corundum {
+    width: 80%;
+    margin: 1vh auto;
+    padding: 2.5%;
+    border-radius: 10px;
+
+    background: url("../images/projects/corundum.png") no-repeat center;
+    background-size: cover;
+
+    .title {
+        width: 100%;
+        text-align: left;
+        font-size: 1.75rem;
+        color: #fdf0d5;
+    }
+
+    .separator {
+        height: 4vh;
+    }
+
+    .button {
+        width: 100%;
+        padding: 1% 5%;
+        background-color: #fdf0d5;
+        color: #003049;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    .button:hover {
+        background-color: #fdf0d5aa;
+        color: #003049;
     }
 }
 

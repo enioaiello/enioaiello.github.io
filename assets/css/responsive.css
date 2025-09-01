@@ -12,6 +12,16 @@
         display: none;
     }
 
+    .main #corundum {
+        .separator {
+            height: 2vh;
+        }
+
+        .button span.text {
+            display: none;
+        }
+    }
+
     .github,
     .linkedin,
     .bluesky,
@@ -54,9 +64,9 @@
         font-size: 1rem;
     }
 
-    .main #projects .projects .project-container-link {
-        flex-direction: column;
-    }
+    /*.main #projects .projects .project-container-link {*/
+    /*    flex-direction: column;*/
+    /*}*/
 
     .main #projects .projects .project-link {
         font-size: 1rem;
