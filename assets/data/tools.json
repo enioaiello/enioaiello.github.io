@@ -392,20 +392,20 @@
     "version": "9.13"
   },
   {
-    "icon": "os/windows/10.png",
-    "name": "Windows 10 LTSC Entreprise 2021",
-    "category": "os",
-    "state": "not-used",
-    "badge": "",
-    "version": "22h2"
-  },
-  {
     "icon": "os/windows/11.png",
     "name": "Windows 11 LTSC Entreprise 2024",
     "category": "os",
     "state": "not-used",
     "badge": "",
     "version": "24h2"
+  },
+  {
+    "icon": "os/windows/10.png",
+    "name": "Windows 10 LTSC Entreprise 2021",
+    "category": "os",
+    "state": "not-used",
+    "badge": "",
+    "version": "22h2"
   },
   {
     "icon": "os/reactos.png",
