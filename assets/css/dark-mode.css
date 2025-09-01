@@ -39,9 +39,12 @@
     }
 
     .main #projects .projects .project:hover,
-    .main #ressources .ressources .ressource:hover,
-    .main #tools .tools .tool:hover {
+    .main #ressources .ressources .ressource:hover {
         background-color: var(--gray-color);
+    }
+
+    .main #tools .tools .tool .tool-title {
+        color: var(--white-color);
     }
 
     .footer {
