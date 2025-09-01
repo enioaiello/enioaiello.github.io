@@ -23,9 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
             stateHTML = `<span class="state not-used">Pas utilisé</span>`;
         }
 
+        // Définition de l'URL des icônes
+        let iconPath = "https://enioaiello.github.io/assets/images/tools/" + tool.icon;
+
         return `
         <div class="tool">
-            <img src="${tool.icon}" alt="Logo de ${tool.name}" class="tool-icon">
+            <img src="${iconPath}" alt="Logo de ${tool.name}" class="tool-icon">
             <div class="tool-description">
                 <h3 class="tool-title">${tool.name}</h3>
                 <h4 class="tool-version">${tool.version}</h4>
