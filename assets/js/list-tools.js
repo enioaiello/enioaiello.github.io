@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (tool.state === "used") {
             stateHTML = `<span class="state used">Utilisé</span>`;
         } else if (tool.state === "not-used") {
-            stateHTML = `<span class="state not-used">Pas utilisé</span>`;
+            stateHTML = `<span class="state not-used">Pas utilisé dernièrement</span>`;
         }
 
         // Définition de l'URL des icônes
