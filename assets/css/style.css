@@ -88,7 +88,12 @@
 .main #projects,
 .main #tools,
 .main #ressources,
-.main #contact {
+.main #contact,
+.main #about,
+.main #skills,
+.main #languages,
+.main #particularity,
+.main #curriculum-vitae {
     scroll-margin-top: 81px;
 }
 
@@ -142,7 +147,12 @@
 .main #projects,
 .main #ressources,
 .main #tools,
-.main #contact {
+.main #contact,
+.main #about,
+.main #skills,
+.main #languages,
+.main #particularity,
+.main #curriculum-vitae {
     width: 100%;
     padding: 1vh 10%;
 

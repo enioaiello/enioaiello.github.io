@@ -1,0 +1,159 @@
+#mobile-notification {
+    display: none;
+
+    .button {
+        width: 100%;
+        padding: 2% 5%;
+        background-color: var(--green-color);
+        color: var(--white-color);
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+}
+
+.main #home {
+    background: none !important;
+}
+
+.main #about {
+    .text:first-of-type {
+        margin-bottom: 1vh;
+    }
+
+    .text {
+        margin: 1vh 0;
+    }
+
+    .text:last-of-type {
+        margin-top: 1vh;
+    }
+}
+
+.main #skills,
+.main #languages,
+.main #particularity {
+    .category {
+        width: 100%;
+        margin: 1vh 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1vh;
+        list-style: none;
+    }
+
+    .skill,
+    .element {
+        cursor: default;
+        width: auto;
+        padding: 1%;
+        background-color: var(--gray-color);
+        color: var(--white-color);
+        text-decoration: none;
+        border-radius: 10px;
+        white-space: nowrap;
+    }
+
+    .skill:hover,
+    .element:hover {
+        background-color: var(--green-color);
+    }
+}
+
+.main #curriculum-vitae {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    .button {
+        margin: 1vh 0;
+        padding: 1% 5%;
+        background-color: var(--green-color);
+        color: var(--white-color);
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    .button:hover {
+        background-color: var(--white-color);
+        color: var(--green-color);
+    }
+}
+
+.main #projects {
+    .refresh-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .refresh-container #refresh {
+        font-size: 1.2rem;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    * {
+        margin: 1vh 0;
+    }
+
+    .icon {
+        font-size: 3rem;
+    }
+
+    .error-description {
+        font-size: 1.3rem;
+    }
+
+    .error-message {
+        color: var(--gray-color);
+    }
+}
+
+.main #projects .projects .project:hover, .main #ressources .ressources .ressource:hover {
+    background-color: transparent !important;
+}
+
+@media (max-width: 624px) {
+    #mobile-notification {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mobile-notification * {
+        width: 90%;
+        text-align: center;
+    }
+
+    #home,
+    #about,
+    #projects,
+    #skills,
+    #languages,
+    #particularity,
+    #curriculum-vitae,
+    #contact,
+    footer {
+        display: none !important;
+    }
+}

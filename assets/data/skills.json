@@ -47,5 +47,5 @@
   { "name": "OpenOffice", "category": "office" },
 
   { "name": "Méthodes AGILES", "category": "methodologies" },
-  { "name": "CNV (Communication Non Violente)", "category": "methodologies" }
+  { "name": "Communication non violente", "category": "methodologies" }
 ]
