@@ -64,16 +64,17 @@
         font-size: 1rem;
     }
 
-    /*.main #projects .projects .project-container-link {*/
-    /*    flex-direction: column;*/
-    /*}*/
-
     .main #projects .projects .project-link {
         font-size: 1rem;
     }
 
     .main #contact .contact {
         font-size: 1.25rem;
+    }
+
+    .main #tools .tools .tool {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .github,
