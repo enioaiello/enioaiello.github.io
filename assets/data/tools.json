@@ -28,7 +28,7 @@
     "name": "macOS Catalina",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": "power",
     "version": "10.15.7"
   },
   {
@@ -36,7 +36,7 @@
     "name": "macOS High Sierra",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": "power",
     "version": "10.13.6"
   },
   {
@@ -67,7 +67,7 @@
     "icon": "os/macos/osx-snow-leopard.png",
     "name": "OS X Snow Leopard",
     "category": "os",
-    "state": "not-used",
+    "state": "used",
     "badge": "",
     "version": "10.6.8"
   },
@@ -84,7 +84,7 @@
     "name": "Windows 11",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": "power",
     "version": "24h2"
   },
   {
@@ -92,14 +92,14 @@
     "name": "Windows 10",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": "power",
     "version": "22h2"
   },
   {
     "icon": "os/windows/7.png",
     "name": "Windows 7",
     "category": "os",
-    "state": "not-used",
+    "state": "used",
     "badge": "",
     "version": "SP1"
   },
@@ -195,7 +195,7 @@
     "icon": "os/android/11.png",
     "name": "Android 11",
     "category": "os",
-    "state": "not-used",
+    "state": "used",
     "badge": "",
     "version": "11.0.0_r76"
   },
@@ -219,7 +219,7 @@
     "icon": "os/android/6.png",
     "name": "Android 6",
     "category": "os",
-    "state": "not-used",
+    "state": "used",
     "badge": "",
     "version": "6.0.1_r81"
   },
@@ -251,7 +251,7 @@
     "icon": "os/gnu-linux/archlinux/arch-linux.png",
     "name": "Arch Linux",
     "category": "os",
-    "state": "not-used",
+    "state": "used",
     "badge": "",
     "version": "2025.08.01"
   },
@@ -331,7 +331,7 @@
     "icon": "os/gnu-linux/elementaryos/elementary.png",
     "name": "elementaryOS 8",
     "category": "os",
-    "state": "not-used",
+    "state": "used",
     "badge": "",
     "version": "8.0"
   },
@@ -395,7 +395,7 @@
     "icon": "os/windows/11.png",
     "name": "Windows 11 LTSC Entreprise 2024",
     "category": "os",
-    "state": "not-used",
+    "state": "used",
     "badge": "",
     "version": "24h2"
   },
@@ -403,7 +403,7 @@
     "icon": "os/windows/10.png",
     "name": "Windows 10 LTSC Entreprise 2021",
     "category": "os",
-    "state": "not-used",
+    "state": "used",
     "badge": "",
     "version": "22h2"
   },
