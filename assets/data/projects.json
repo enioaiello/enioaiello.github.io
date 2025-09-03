@@ -60,6 +60,14 @@
         "category": "Scripts"
     },
     {
+        "name": "Config iSH",
+        "description": "Un script Shell permettant de configurer iSH pour le rendre plus pratique",
+        "image": "../assets/images/projects/corundum-maintenance.png",
+        "languages": ["Shell"],
+        "github": ["enioaiello", "config-ish"],
+        "category": "Scripts"
+    },
+    {
         "name": "Solent",
         "description": "Un modèle avec Docker Composer pour Laravel 12 utilisant Apache, MySQL.",
         "image": "../assets/images/projects/solent.png",
