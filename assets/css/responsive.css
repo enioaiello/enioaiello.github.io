@@ -22,6 +22,19 @@
         }
     }
 
+    .main #hire {
+        .separator {
+                        height: 2vh;
+                                
+        }
+
+        .button span.text {
+                        display: none;
+                                
+        }
+            
+    }
+
     .github,
     .linkedin,
     .bluesky,

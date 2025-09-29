@@ -210,7 +210,7 @@
             width: 100%;
             text-align: left;
             font-size: 1.75rem;
-            color: #fdf0d5;
+            color: var(--black-color);
         }
 
         .separator {
@@ -220,16 +220,16 @@
         .button {
             width: 100%;
             padding: 1% 5%;
-            background-color: #fdf0d5;
-            color: #003049;
+            background-color: var(--green-color);
+            color: var(--white-color);
             text-align: center;
             text-decoration: none;
             border-radius: 10px;
         }
 
         .button:hover {
-            background-color: #fdf0d5aa;
-            color: #003049;          
+            background-color: var(--white-color);
+            color: var(--green-color);          
         }
 }
 
