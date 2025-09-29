@@ -200,6 +200,39 @@
     }
 }
 
+.main #hire {
+        width: 80%;
+        margin: 1vh auto;
+        padding: 2.5%;
+        border-radius: 10px;
+
+        .title {
+            width: 100%;
+            text-align: left;
+            font-size: 1.75rem;
+            color: #fdf0d5;
+        }
+
+        .separator {
+            height: 4vh;
+        }
+
+        .button {
+            width: 100%;
+            padding: 1% 5%;
+            background-color: #fdf0d5;
+            color: #003049;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        .button:hover {
+            background-color: #fdf0d5aa;
+            color: #003049;          
+        }
+}
+
 .main #projects,
 .main #ressources,
 .main #tools {
