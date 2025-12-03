@@ -1,0 +1,118 @@
+{
+  "/": {
+    "title": "Accueil",
+    "view": "views/home.html",
+    "style": "assets/css/home.css"
+  },
+  "/404": {
+    "title": "Erreur 404",
+    "view": "views/errors/404.html",
+    "style": "assets/css/error.css"
+  },
+  "/403": {
+    "title": "Erreur 403",
+    "view": "views/errors/403.html",
+    "style": "assets/css/error.css"
+  },
+  "/projects": {
+    "title": "Projets",
+    "view": "views/projects.html",
+    "style": "assets/css/projects.css",
+    "script": "loadProjects"
+  },
+  "/project/admin-services": {
+    "title": "Admin Services",
+    "view": "views/projects/admin-services.html",
+    "style": "assets/css/project-details.css"
+  },
+  "/project/admin-services-legacy": {
+    "title": "Admin Services (legacy)",
+    "view": "views/projects/admin-services-legacy.html",
+    "style": "assets/css/project-details.css"
+  },
+  "/project/vador": {
+    "title": "Vador",
+    "view": "views/projects/vador.html",
+    "style": "assets/css/project-details.css"
+  },
+  "/project/horizon": {
+    "title": "Horizon",
+    "view": "views/projects/horizon.html",
+    "style": "assets/css/project-details.css"
+  },
+  "/project/atomix": {
+    "title": "Atomix",
+    "view": "views/projects/atomix.html",
+    "style": "assets/css/project-details.css"
+  },
+  "/project/quick": {
+    "title": "Quick",
+    "view": "views/projects/quick.html",
+    "style": "assets/css/project-details.css"
+  },
+  "/project/corundum-maintenance": {
+    "title": "Corundum maintenance",
+    "view": "views/projects/corundum-maintenance.html",
+    "style": "assets/css/project-details.css"
+  },
+  "/project/config-ish": {
+    "title": "Config iSH",
+    "view": "views/projects/config-ish.html",
+    "style": "assets/css/project-details.css"
+  },
+  "/project/solent": {
+    "title": "Solent",
+    "view": "views/projects/solent.html",
+    "style": "assets/css/project-details.css"
+  },
+  "/project/lumix": {
+    "title": "Lumix",
+    "view": "views/projects/lumix.html",
+    "style": "assets/css/project-details.css"
+  },
+  "/hire": {
+    "title": "Page recruteur",
+    "view": "views/hire.html",
+    "style": "assets/css/hire.css"
+  },
+  "/ressources": {
+    "title": "Ressources",
+    "view": "views/ressources.html",
+    "style": "assets/css/ressources.css"
+  },
+  "/tools": {
+    "title": "Outils",
+    "view": "views/tools.html",
+    "style": "assets/css/tools.css"
+  },
+  "/gallery": {
+    "title": "Galerie",
+    "view": "views/gallery.html"
+  },
+  "/videos": {
+    "title": "Vidéos",
+    "view": "views/videos.html",
+    "style": "assets/css/videos.css"
+  },
+  "/discord": {
+    "link": "https://discord.com/invite/AHYcDWf5WV"
+  },
+  "/bluesky": {
+    "link": "https://bsky.app/profile/enioaiello.bsky.social"
+  },
+  "/github": {
+    "link": "https://github.com/enioaiello"
+  },
+  "/instagram": {
+    "link": "https://instagram.com/aielloenio"
+  },
+  "/linkedin": {
+    "link": "https://www.linkedin.com/in/enioaiello/"
+  },
+  "/threads": {
+    "link": "https://www.threads.com/@aielloenio"
+  },
+  "/youtube": {
+    "link": "https://www.youtube.com/@enioaiello"
+  }
+}

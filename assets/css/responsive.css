@@ -1,112 +1,121 @@
 @media (max-width: 624px) {
-    .main #home .content {
-        width: 100%;
-        text-align: center;
-
-        .button {
-            width: 100%;
-        }
+    .burger {
+        display: block;
     }
 
-    .main #home .profile-picture {
+    .header .navbar {
+        padding: 2.5%;
+    }
+
+    .header .navbar .links {
         display: none;
     }
 
-    .main #corundum {
-        .separator {
-            height: 2vh;
+    .header.menu-open .navbar .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        position: fixed;
+        inset: 0;
+        background-color: var(--white-blur);
+        z-index: 1000;
+
+        gap: 2rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header.menu-open .navbar .links .link {
+        font-size: 1.8rem;
+    }
+
+    .header .navbar,
+    .main,
+    .footer .content {
+        width: 90%;
+    }
+
+    .main .hero {
+        padding: 2.5% !important;
+    }
+
+    .main .projects {
+        flex-direction: column !important;
+
+        .project {
+            width: 100% !important;
         }
 
-        .button span.text {
-            display: none;
+        .more-projects {
+            margin: 0 auto 2.5vh auto !important;
         }
     }
 
-    .main #hire {
-        .separator {
-                        height: 2vh;
-                                
-        }
-
-        .button span.text {
-                        display: none;
-                                
-        }
-            
-    }
-
-    .github,
-    .linkedin,
-    .bluesky,
-    .discord,
-    .instagram,
-    .youtube,
-    .threads {
+    .contact {
         .link .base {
-            display: none;
+            display: none !important;
         }
     }
 }
 
 @media (max-width: 992px) {
-    .header {
-        display: none;
-    }
-
-    .main #home {
-        padding: 0 5%;
-    }
-
-    .main #home .content {
-        font-size: 1.25rem;
-    }
-
-    .main #projects .projects {
-        flex-direction: column;
-    }
-
-    .main #projects .projects .project-image {
-        width: 100%;
-    }
-
-    .main #projects .projects .project-title {
-        font-size: 1.25rem;
-    }
-
-    .main #projects .projects .project-description {
-        font-size: 1rem;
-    }
-
-    .main #projects .projects .project-link {
-        font-size: 1rem;
-    }
-
-    .main #contact .contact {
-        font-size: 1.25rem;
-    }
-
-    .main #tools .tools .tool {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .github,
-    .linkedin,
-    .bluesky,
-    .discord,
-    .instagram,
-    .youtube,
-    .threads {
-        flex-direction: column;
+    .contact {
+        flex-direction: column !important;
 
         .brand {
-            flex-direction: column;
-            margin: 0 0 1vh 0;
+            flex-direction: column !important;
+            margin: 0 0 1vh 0 !important;
         }
     }
 
-    .main #projects,
-    .main #contact {
-        padding: 1vh 5%;
+    .tools .tool {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        * {
+            margin: 0.5vh 0 !important;
+        }
+
+        *:first-child,
+        *:last-child {
+            margin: 0 0 0.5vh 0 !important;
+        }
+
+        .description,
+        .badges {
+            width: 100% !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+
+        .badges * {
+            margin: 0 0.5vw 0 0 !important;
+        }
+
+        .badges *:last-child {
+            margin: 0 !important;
+        }
+    }
+
+    .project .head,
+    .project .head .details {
+        flex-direction: column !important;
+    }
+
+    .project .head .details .icon {
+        width: 64px !important;
+    }
+
+    .project .head .links {
+        width: 100% !important;
+        margin: 2.5vh 0 0 0 !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: flex-end !important;
+        align-items: center !important;
     }
 }

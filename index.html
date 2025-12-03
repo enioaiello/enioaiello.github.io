@@ -1,167 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="theme-color" content="#588157">
     <title>Enio Aiello</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/dark-mode.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
-    <link rel="icon" href="assets/images/logo.png">
-    <meta property="og:title" content="Portfolio">
-    <meta property="og:description" content="Le portfolio d'Enio Aiello. Tout simplement.">
-    <meta property="og:image" content="assets/images/logo.png">
+    <!-- Assets de base -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/dark-mode.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="assets/images/logo.png" rel="icon">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Enio Aiello">
+    <meta property="og:description" content="Le portfolio d'Enio Aiello, tout simplement.">
+    <meta property="og:image" content="https://enioaiello.github.io/assets/images/banner.png">
     <meta property="og:url" content="https://enioaiello.github.io/">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Enio Aiello">
+    <!-- Autres assets -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <header class="header">
-            <nav class="nav">
-                <img src="assets/images/logo.png" alt="Logo d'Enio Aiello" class="logo">
-                <div class="separator"></div>
-                <ul class="menu">
-                    <li class="menu-item"><a href="#home" class="link active">Accueil</a></li>
-                    <li class="menu-item"><a href="#projects" class="link">Projets</a></li>
-                    <li class="menu-item"><a href="#tools" class="link">Outils</a></li>
-                    <li class="menu-item"><a href="#ressources" class="link">Ressources</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="main">
-            <section id="home" class="section">
-                <div class="content">
-                    <h1 class="title">Enio Aiello</h1>
-                    <p class="description">Développeur web et passionné d'informatique.</p>
-                    <a href="#projects" class="button">En savoir plus</a>
-                </div>
-                <img src="assets/images/profile.png" alt="Photo de profil d'Enio Aiello" class="profile-picture">
-            </section>
-            <section id="projects" class="section">
-                <h2 class="title">Projets</h2>
-                <div class="projects">
-                    <div class="project">
-                        <img src="assets/images/projects/admin-services.png" alt="Projet Admin Services" class="project-image">
-                        <h3 class="project-title">Admin Services</h3>
-                        <p class="project-description">Plateforme web permettant aux utilisateurs de déployer et gérer facilement leurs applications en ligne.</p>
-                        <p class="project-container-link"><a href="https://github.com/enioaiello/admin-services" target="_blank" class="project-link">Voir le dépôt GitHub</a></p>
-                    </div>
-                    <div class="project">
-                        <img src="assets/images/projects/quick.png" alt="Projet Quick" class="project-image">
-                        <h3 class="project-title">Quick</h3>
-                        <p class="project-description">Site web permettant de télécharger des applications et de les installer via Homebrew.</p>
-                        <p class="project-container-link"><a href="https://github.com/corundumproject/quick" target="_blank" class="project-link">Voir le dépôt GitHub</a></p>
-                    </div>
-                </div>
-                <a href="views/projects.html" class="link"><i class="ri-folder-open-fill"></i> En voir plus</a>
-            </section>
-            <section id="corundum" class="section">
-                <h2 class="title">Corundum</h2>
-                <div class="separator"></div>
-                <a href="https://corundum.fr/" target="_blank" class="button"><span class="text">Découvrir</span> <i class="ri-arrow-right-line"></i></a>
-            </section>
-            <section id="hire" class="section">
-                <h2 class="title">Espace recruteur</h2>
-                <div class="separator"></div>
-                <a href="views/hire.html" class="button"><span class="text">Découvrir</span> <i class="ri-arrow-right-line"></i></a>
-            </section>
-            <section id="tools" class="section">
-                <h2 class="title">Outils</h2>
-                <div class="tools">
-                    <div class="tool">
-                        <h3 class="tool-title">Tous les outils</h3>
-                        <a href="views/tools.html" class="tool-button"><i class="ri-arrow-right-line"></i></a>
-                    </div>
-                    <div class="tool">
-                        <h3 class="tool-title">Systèmes d'exploitation</h3>
-                        <a href="views/tools.html#os" class="tool-button"><i class="ri-arrow-right-line"></i></a>
-                    </div>
-                    <div class="tool">
-                        <h3 class="tool-title">Logiciels</h3>
-                        <a href="views/tools.html#software" class="tool-button"><i class="ri-arrow-right-line"></i></a>
-                    </div>
-                </div>
-            </section>
-            <section id="ressources" class="section">
-                <h2 class="title">Ressources</h2>
-                <div class="ressources">
-                    <div class="ressource">
-                        <h3 class="ressource-title">Bientôt une refonte !</h3>
-                        <p class="ressource-date">29 août 2025</p>
-                        <p class="ressource-description">Le site bénéficiera prochainement d'une refonte !</p>
-                    </div>
-                    <div class="ressource">
-                        <h3 class="ressource-title">Je quitte Microsoft. Et vous devriez le faire aussi.</h3>
-                        <p class="ressource-date">18 mai 2024</p>
-                        <p class="ressource-description">Un article expliquant ma situation avec Microsoft.</p>
-                        <p class="ressource-container-link"><a href="assets/pdf/je-quitte-microsoft.pdf" class="ressource-link">Consulter</a></p>
-                    </div>
-                </div>
-                <a href="views/ressources.html" class="link"><i class="ri-folder-open-fill"></i> En voir plus</a>
-            </section>
-            <section id="contact" class="section">
-                <h2 class="title">Contact</h2>
-                <div class="contact">
-                    <div class="bluesky">
-                        <div class="brand">
-                            <i class="ri-bluesky-fill icon"></i>
-                            <h3 class="subtitle">Bluesky</h3>
-                        </div>
-                        <a href="https://bsky.app/profile/enioaiello.bsky.social" target="_blank" class="link"><span class="base">bsky.app/profile/</span>enioaiello.bsky.social</a>
-                    </div>
-                    <div class="discord">
-                        <div class="brand">
-                            <i class="ri-discord-fill icon"></i>
-                            <h3 class="subtitle">Discord</h3>
-                        </div>
-                        <a href="https://discord.gg/AHYcDWf5WV" target="_blank" class="link"><span class="base">discord.gg/</span>AHYcDWf5WV</a>
-                    </div>
-                    <div class="github">
-                        <div class="brand">
-                            <i class="ri-github-fill icon"></i>
-                            <h3 class="subtitle">GitHub</h3>
-                        </div>
-                        <a href="https://github.com/enioaiello/" target="_blank" class="link"><span class="base">github.com/</span>enioaiello</a>
-                    </div>
-                    <div class="instagram">
-                        <div class="brand">
-                            <i class="ri-instagram-fill icon"></i>
-                            <h3 class="subtitle">Instagram</h3>
-                        </div>
-                        <a href="https://www.instagram.com/aielloenio" target="_blank" class="link"><span class="base">instagram.com/</span>aielloenio</a>
-                    </div>
-                    <div class="linkedin">
-                        <div class="brand">
-                            <i class="ri-linkedin-box-fill icon"></i>
-                            <h3 class="subtitle">LinkedIn</h3>
-                        </div>
-                        <a href="https://www.linkedin.com/in/enioaiello/" target="_blank" class="link"><span class="base">linkedin.com/in/</span>enioaiello</a>
-                    </div>
-                    <div class="threads">
-                        <div class="brand">
-                            <i class="ri-threads-fill icon"></i>
-                            <h3 class="subtitle">Threads</h3>
-                        </div>
-                        <a href="https://www.threads.com/@aielloenio" target="_blank" class="link"><span class="base">threads.com/</span>@aielloenio</a>
-                    </div>
-                    <div class="youtube">
-                        <div class="brand">
-                            <i class="ri-youtube-fill icon"></i>
-                            <h3 class="subtitle">YouTube</h3>
-                        </div>
-                        <a href="https://www.youtube.com/@enioaiello" target="_blank" class="link"><span class="base">youtube.com/</span>@enioaiello</a>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <p class="copyright">&copy; 2025 - Enio Aiello</p>
-        </footer>
-    </div>
-    <script src="assets/js/script.js"></script>
+<body class="body">
+    <header class="header dark">
+        <nav class="navbar">
+            <a href="#/"><img class="logo" src="assets/images/logo.png" alt="Logo du portfolio"></a>
+
+            <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+
+            <ul class="links">
+                <li class="item"><a href="#/" class="link">Accueil</a></li>
+                <li class="item"><a href="#/projects" class="link">Projets</a></li>
+                <li class="item"><a href="#/ressources" class="link">Ressources</a></li>
+                <li class="item"><a href="#/tools" class="link">Outils</a></li>
+<!--                <li class="item"><a href="#/gallery" class="link">Galerie</a></li>-->
+<!--                <li class="item"><a href="#/videos" class="link">Vidéos</a></li>-->
+            </ul>
+        </nav>
+    </header>
+
+    <main id="app" class="main"></main>
+
+    <button type="button" class="top-button" aria-label="Remonter en haut de la page">
+        <i class="ri-arrow-up-s-line"></i>
+    </button>
+
+    <footer class="footer">
+        <div class="content">
+            <p>Tous droits réservés, Enio Aiello.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/router.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

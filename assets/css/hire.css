@@ -1,19 +1,53 @@
-#mobile-notification {
-    display: none;
-
-    .button {
-        width: 100%;
-        padding: 2% 5%;
-        background-color: var(--green-color);
-        color: var(--white-color);
-        text-align: center;
-        text-decoration: none;
-        border-radius: 10px;
-    }
-}
-
 .main #home {
-    background: none !important;
+    width: 100%;
+    margin: 2.5vh 0;
+    padding: 1% 2.5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: var(--default-border);
+    box-shadow: var(--default-shadow);
+    background: none;
+
+    color: var(--white-color);
+
+    .content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex: 1;
+    }
+
+    .content * {
+        margin: 1vh 0;
+    }
+
+    .content .button {
+        color: var(--white-color);
+        background-color: var(--green-color);
+        border: none;
+        border-radius: var(--default-border);
+        padding: 1% 5%;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .content .button:hover {
+        color: var(--green-color);
+        background-color: var(--white-color);
+    }
+
+    .profile-picture {
+        width: 25%;
+        border-radius: var(--rounded-border);
+        box-shadow: var(--default-shadow);
+    }
 }
 
 .main #about {
@@ -35,7 +69,7 @@
 .main #particularity {
     .category {
         width: 100%;
-        margin: 1vh 0;
+        margin: 2.5vh 0;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -50,8 +84,8 @@
         cursor: default;
         width: auto;
         padding: 1%;
-        background-color: var(--gray-color);
-        color: var(--white-color);
+        background-color: var(--lightgray-color);
+        color: var(--black-color);
         text-decoration: none;
         border-radius: 10px;
         white-space: nowrap;
@@ -61,17 +95,37 @@
     .element:hover {
         background-color: var(--green-color);
     }
+
+    .text:first-of-type {
+        margin-bottom: 2.5vh;
+        text-align: center;
+    }
+
+    .link {
+        color: var(--green-color);
+        text-decoration: none;
+    }
+
+    .link.more {
+        display: block;
+        text-align: right;
+    }
 }
 
 .main #curriculum-vitae {
     width: 100%;
+    margin: 2.5vh 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    border-radius: var(--default-border);
+    box-shadow: var(--default-shadow);
+    background: none;
+    color: var(--black-color);
 
     .button {
-        margin: 1vh 0;
+        margin: 2.5vh 0;
         padding: 1% 5%;
         background-color: var(--green-color);
         color: var(--white-color);
@@ -84,22 +138,153 @@
         background-color: var(--white-color);
         color: var(--green-color);
     }
+
+    .text small {
+        display: block;
+        text-align: center;
+    }
 }
 
 .main #projects {
     .refresh-container {
         width: 100%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
     }
 
-    .refresh-container #refresh {
+    .refresh-container * {
+        margin: 0 1vw;
+    }
+
+    .refresh-container *:first-child {
+        margin-left: 0;
+    }
+
+    .refresh-container *:last-child {
+        margin-right: 0;
+    }
+
+    .refresh-container #refresh,
+    .refresh-container #all-projects {
         font-size: 1.2rem;
         background-color: transparent;
         border: none;
         outline: none;
         cursor: pointer;
+    }
+
+    .refresh-container #refresh:hover,
+    .refresh-container #all-projects:hover {
+        color: var(--green-color);
+    }
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .project {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        padding: 1% 0;
+        margin: 0 0 2.5vh;
+    }
+
+    .project .image {
+        width: 100%;
+    }
+
+    .project .title {
+        margin: 0 0 2.5vh;
+    }
+
+    .project .description {
+        width: 100%;
+        margin: 1vh 0;
+        flex: 1;
+        text-align: center;
+    }
+
+    .project .button {
+        display: inline-block;
+        color: var(--white-color);
+        background-color: var(--green-color);
+        border: none;
+        border-radius: var(--default-border);
+        padding: 1% 5%;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .project .button:hover {
+        color: var(--green-color);
+        background-color: var(--white-color);
+    }
+
+    .project .other {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .project .other .languages {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex: 1;
+        margin: 1vh 1vw 1vh 0;
+        overflow-x: auto;
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .project .other .languages.none {
+        flex: 1;
+    }
+
+    .project .other .language,
+    .project .other .button {
+        padding: 3%;
+        margin: 0 1vw 0 0;
+        background-color: var(--lightgray-color);
+        color: var(--black-color);
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    .project .other .language {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        cursor: default;
+
+        i {
+            margin: 0 0.5vw 0 0;
+        }
+    }
+
+    .project .other .language:hover,
+    .project .other .button:hover {
+        background-color: var(--green-color);
+        color: var(--white-color);
     }
 }
 
@@ -130,30 +315,162 @@
     background-color: transparent !important;
 }
 
-@media (max-width: 624px) {
-    #mobile-notification {
-        width: 100%;
-        height: 100vh;
+#contact {
+    width: 100%;
+    padding: 1% 2.5%;
+
+    .contacts {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        margin: 2.5vh 0;
     }
 
-    #mobile-notification * {
-        width: 90%;
-        text-align: center;
+    .contacts .contact {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2vh 0;
+
+        .brand {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .icon {
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            margin: 0 0 0 1vw;
+        }
+
+        .link {
+            color: var(--green-color);
+            text-decoration: none;
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .main #home {
+        color: var(--white-color) !important;
     }
 
-    #home,
-    #about,
-    #projects,
-    #skills,
+    .main #skills,
+    .main #languages,
+    .main #particularity {
+        .skill,
+        .element {
+            background-color: var(--darkgray-color) !important;
+            color: var(--white-color) !important;
+        }
+
+        .skill:hover,
+        .element:hover {
+            background-color: var(--green-color) !important;
+        }
+    }
+
+    .main #curriculum-vitae {
+        color: var(--white-color) !important;
+    }
+
+    .main #curriculum-vitae .button:hover {
+        background-color: var(--gray-color) !important;
+        color: var(--white-color) !important;
+    }
+
+    .main .refresh-container #refresh,
+    .refresh-container #all-projects {
+        color: var(--white-color) !important;
+    }
+
+    .refresh-container #refresh:hover,
+    .refresh-container #all-projects:hover {
+        color: var(--green-color) !important;
+    }
+
+    .projects .project .other .language,
+    .projects .project .other .button {
+        background-color: var(--darkgray-color) !important;
+        color: var(--white-color) !important;
+    }
+
+    .projects .project .other .languages .language:hover,
+    .projects .project .other .button:hover {
+        background-color: var(--green-color) !important;
+        color: var(--white-color) !important;
+    }
+}
+
+@media (max-width: 624px) {
+    .main #home {
+        padding: 2.5%;
+        flex-direction: column-reverse;
+
+        .profile-picture {
+            width: 50%;
+            margin: 2.5vh 0;
+        }
+
+        .content {
+            width: 100%;
+            align-items: center;
+        }
+
+        .content .description {
+            text-align: center;
+        }
+    }
+
+    .refresh-container {
+        flex-direction: column-reverse;
+        gap: 2.5vh;
+    }
+
+    .refresh-container #all-projects {
+        width: 100%;
+        background-color: var(--green-color) !important;
+        color: var(--white-color) !important;
+        border-radius: var(--default-border) !important;
+        padding: 2.5vh 0;
+    }
+
+    .refresh-container #all-projects:hover {
+        background-color: var(--white-color) !important;
+        color: var(--green-color) !important;
+    }
+
+    .skills,
     #languages,
-    #particularity,
-    #curriculum-vitae,
-    #contact,
-    footer {
-        display: none !important;
+    #particularity {
+        .subtitle {
+            text-align: center;
+        }
+
+        .category {
+            justify-content: center !important;
+        }
+
+        .link.more {
+            display: none !important;
+        }
+    }
+
+    #curriculum-vitae {
+        .text {
+            text-align: center;
+        }
+
+        .button {
+            width: 100%;
+            padding: 2.5vh 0 !important;
+        }
     }
 }

@@ -1,60 +1,41 @@
 @media (prefers-color-scheme: dark) {
-    ::selection {
-        background-color: var(--green-color);
-        color: var(--white-color);
-    }
-
-    .header {
-        background-color: var(--black-color);
-    }
-
-    .nav .menu .menu-item .link {
-        color: var(--white-color);
-        text-decoration: none;
-    }
-
-    .main {
+    .body {
         background-color: var(--black-color);
         color: var(--white-color);
     }
 
-    .main #home {
-        width: 100%;
-        height: 60vh;
-        padding: 0 10%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background: url("../images/wallpapers/dark-mode.jpg") no-repeat fixed center;
-        background-size: cover;
+    .header .navbar {
+        background-color: var(--black-blur);
     }
 
-    .main #home .content {
+    .header .navbar .links .item .link {
         color: var(--white-color);
     }
 
-    .ressource-date {
-        color: #ffffffaa !important;
+    .header.menu-open .navbar .links {
+        background-color: var(--black-blur) !important;
     }
 
-    .main #projects .projects .project:hover,
-    .main #ressources .ressources .ressource:hover {
-        background-color: var(--gray-color);
+    .burger-line {
+        background-color: var(--white-color) !important;
     }
 
-    .main #tools .tools .tool .tool-title {
+    .main .section {
+        background-color: var(--black-blur);
+    }
+
+    .footer .content {
+        background-color: var(--black-blur);
         color: var(--white-color);
     }
 
-    .main #hire {
-        .title {
-            color: var(--white-color);
+    .loading-page,
+    .error {
+        background-color: var(--black-blur) !important;
+
+        .button:hover {
+            background-color: var(--darkgray-color) !important;
+            color: var(--white-color) !important;
         }
-    }
-
-    .footer {
-        background-color: var(--black-color);
-        color: var(--white-color);
     }
 }

@@ -1,29 +1,603 @@
-.main #tools .tools {
+.main .section {
+    scroll-margin-top: var(--scroll-margin-top);
+}
+
+.main .hero {
+    width: 100%;
+    margin: 2.5vh 0;
+    padding: 1% 2.5%;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
 
-.main #projects .projects .project:hover,
-.main #ressources .ressources .ressource:hover,
-.main #tools .tools .tool:hover {
-    background-color: var(--lightgray-color);
-}
+    border-radius: var(--default-border);
+    box-shadow: var(--default-shadow);
+    background: url("../images/wallpapers/white-mode.jpg") no-repeat center center fixed;
+    background-size: cover;
 
-@media (max-width: 1024px) {
-    .main #projects .projects .project .project-link {
-        width: 100%;
-        padding: 2% 5%;
-        background-color: var(--green-color);
+    color: var(--black-color);
+
+    .content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex: 1;
+    }
+
+    .content * {
+        margin: 1vh 0;
+    }
+
+    .content .button {
         color: var(--white-color);
+        background-color: var(--green-color);
+        border: none;
+        border-radius: var(--default-border);
+        padding: 1% 5%;
+        cursor: pointer;
+        text-decoration: none;
         text-align: center;
+    }
+
+    .content .button:hover {
+        color: var(--green-color);
+        background-color: var(--white-color);
+    }
+
+    .profile-picture {
+        width: 25%;
+        border-radius: var(--rounded-border);
+        box-shadow: var(--default-shadow);
+    }
+}
+
+.main .projects {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .project {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        padding: 1% 0;
+        margin: 0 0 2.5vh;
+    }
+
+    .project .image {
+        width: 100%;
+    }
+
+    .project .title {
+        margin: 0 0 2.5vh;
+    }
+
+    .project .description {
+        width: 100%;
+        margin: 1vh 0;
+        flex: 1;
+        text-align: center;
+    }
+
+    .project .button {
+        display: inline-block;
+        color: var(--white-color);
+        background-color: var(--green-color);
+        border: none;
+        border-radius: var(--default-border);
+        padding: 1% 5%;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .project .button:hover {
+        color: var(--green-color);
+        background-color: var(--white-color);
+    }
+
+    .project .other {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .project .other .languages {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex: 1;
+        margin: 1vh 1vw 1vh 0;
+        overflow-x: auto;
+
+        /*
+        Style de la "scrollbar"
+        &::-webkit-scrollbar {
+            height: 4px;
+        }
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }*/
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .project .other .language,
+    .project .other .button {
+        padding: 3%;
+        margin: 0 1vw 0 0;
+        background-color: var(--lightgray-color);
+        color: var(--black-color);
         text-decoration: none;
         border-radius: 10px;
     }
 
-    .main #projects .projects .project .project-link:hover {
+    .project .other .language {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        cursor: default;
+
+        i {
+            margin: 0 0.5vw 0 0;
+        }
+    }
+
+    .project .other .language:hover,
+    .project .other .button:hover {
+        background-color: var(--green-color);
+        color: var(--white-color);
+    }
+
+    .more-projects {
+        margin: 0 auto;
+        color: var(--white-color);
+        background-color: var(--green-color);
+        border: none;
+        border-radius: var(--default-border);
+        padding: 1% 5%;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .more-projects:hover {
+        color: var(--green-color);
+        background-color: var(--white-color);
+    }
+}
+
+.main #corundum,
+.main #hire,
+.main #horizon {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 2.5%;
+
+    .separator {
+        flex: 1;
+    }
+
+    .text {
+        width: 75%;
+    }
+}
+
+.main #corundum {
+    background: url("../images/hero/corundum.png") no-repeat center center;
+    background-size: cover;
+
+    .title {
+        color: #fdf0d5;
+    }
+
+    .button {
+        padding: 1% 5%;
+        background-color: #fdf0d5;
+        color: #003049;
+        text-align: center;
+        text-decoration: none;
+        border-radius: var(--default-border);
+    }
+
+    .button:hover {
+        background-color: #fdf0d5aa;
+        color: #003049;
+    }
+}
+
+.main #hire {
+    background: url("../images/hero/hire.png") no-repeat center center;
+    background-size: cover;
+
+    .title {
+        color: var(--black-color);
+    }
+
+    .text {
+        margin: 1vh 0;
+    }
+
+    .button {
+        padding: 1% 5%;
+        background-color: var(--green-color);
+        color: var(--white-color);
+        text-align: center;
+        text-decoration: none;
+        border-radius: var(--default-border);
+    }
+
+    .button:hover {
         background-color: var(--white-color);
         color: var(--green-color);
+    }
+}
+
+.main #horizon {
+    background: url("../images/hero/horizon.png") no-repeat center center;
+    background-size: cover;
+
+    .title {
+        color: var(--white-color);
+    }
+
+    .text {
+        color: var(--white-color);
+    }
+
+    .button {
+        padding: 1% 5%;
+        background-color: var(--white-color);
+        color: var(--black-color);
+        text-align: center;
+        text-decoration: none;
+        border-radius: var(--default-border);
+    }
+
+    .button:hover {
+        background-color: var(--white-blur);
+        color: var(--black-color);
+    }
+
+    .button .text {
+        color: var(--black-color);
+    }
+}
+
+.main #videos {
+    iframe {
+        width: 100%;
+        height: 65vh;
+        border-radius: var(--default-border);
+    }
+}
+
+.main #tools {
+    .tool {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3vh 0;
+    }
+
+    .button {
+        display: flex;
+        background-color: var(--green-color);
+        color: var(--white-color);
+        text-decoration: none;
+        padding: 1%;
+        border-radius: 50%;
+    }
+
+    .button:hover {
+        background-color: var(--white-color);
+        color: var(--green-color);
+    }
+}
+
+.main #ressources {
+    width: 100%;
+
+    .ressources {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 3vh 0;
+    }
+
+    .ressources .ressource {
+        cursor: pointer;
+        padding: 2.5%;
+        margin: 2.5vh 0;
+        border-radius: var(--default-border);
+    }
+
+    .ressources .ressource:first-child {
+        margin-top: 0;
+    }
+
+    .ressources .ressource:hover {
+        background-color: var(--lightgray-color);
+    }
+
+    .ressources .ressource .image {
+        width: 100%;
+        border-radius: var(--default-border);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .ressources .ressource .text {
+        width: 100%;
+        margin: 1vh 0;
+        text-align: center;
+    }
+
+    .ressources .ressource .date {
+        width: 100%;
+        text-align: center;
+        color: var(--gray-color);
+    }
+
+    .ressources .ressource .button {
+        display: inline-block;
+        margin: 1vh 0;
+        color: var(--white-color);
+        background-color: var(--green-color);
+        border: none;
+        border-radius: var(--default-border);
+        padding: 1% 5%;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .more-ressources {
+        margin: 0 auto;
+        color: var(--white-color);
+        background-color: var(--green-color);
+        border: none;
+        border-radius: var(--default-border);
+        padding: 1% 5%;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .more-ressources:hover {
+        color: var(--green-color);
+        background-color: var(--white-color);
+    }
+}
+
+.main #donation {
+    width: 100%;
+    padding: 1% 2.5%;
+
+    .description {
+        text-align: center;
+        margin: 2.5vh 0;
+    }
+
+    .services {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        a {
+            color: var(--green-color);
+            text-decoration: none;
+            font-size: 2.5rem;
+            margin: 0 1vw;
+        }
+
+        a:first-child {
+            margin-left: 0;
+        }
+
+        a:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.main #contact {
+    width: 100%;
+    padding: 1% 2.5%;
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin: 2.5vh 0;
+    }
+
+    .contacts .contact {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2vh 0;
+
+        .brand {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .icon {
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            margin: 0 0 0 1vw;
+        }
+
+        .link {
+            color: var(--green-color);
+            text-decoration: none;
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .main .hero {
+        background: url("../images/wallpapers/dark-mode.jpg") no-repeat center center fixed;
+        background-size: cover;
+
+        color: var(--white-color);
+    }
+
+    .main .hero .button:hover,
+    .projects .more-projects:hover,
+    .main #hire .button:hover,
+    .ressources .more-ressources:hover,
+    .tools .tool .button:hover {
+        color: var(--white-color) !important;
+        background-color: var(--gray-color) !important;
+    }
+
+    .projects .project .other .languages .language,
+    .projects .project .other .button {
+        background-color: var(--darkgray-color) !important;
+        color: var(--white-color) !important;
+    }
+
+    .projects .project .other .languages .language:hover,
+    .projects .project .other .button:hover {
+        background-color: var(--green-color) !important;
+        color: var(--white-color) !important;
+    }
+
+    .ressources .ressource .date {
+        color: var(--white-color) !important;
+    }
+
+    .ressources .ressource:hover {
+        background-color: var(--darkgray-color) !important;
+    }
+}
+
+/*.main #corundum .mobile-icon {
+    display: none;
+    height: 25vh;
+    width: 100%;
+    background: url("../images/icons/corundum.png") no-repeat center center;
+    background-size: contain;
+}*/
+
+@media (max-width: 624px) {
+    .main .hero {
+        padding: 2.5%;
+        flex-direction: column-reverse;
+
+        .profile-picture {
+            width: 50%;
+            margin: 2.5vh 0;
+        }
+
+        .content {
+            width: 100%;
+            align-items: center;
+        }
+
+        .content .description {
+            text-align: center;
+        }
+    }
+
+    .main .hero .content .button,
+    .main .projects .more-projects,
+    .main #hire .button,
+    .main #corundum .button,
+    .main #horizon .button,
+    .main #ressources .more-ressources {
+        width: 100%;
+        padding: 2.5vh 0;
+    }
+
+    .main #hire,
+    .main #corundum,
+    .main #horizon {
+        align-items: center;
+
+        .title {
+            margin: 0 0 2.5vh 0;
+        }
+    }
+
+    .main #corundum {
+        background-image: none;
+        background-color: #003049;
+
+        /*.mobile-icon {
+            display: inline-block;
+        }*/
+    }
+
+    .main #horizon {
+        background-image: none;
+        background-color: #302d3e;
+    }
+
+    .main .tools {
+        flex-direction: column;
+    }
+
+    .main .tools .tool {
+        gap: 2.5vh;
+
+        .title {
+            margin: 0 0 2.5vh 0;
+        }
+
+        .button {
+            border-radius: var(--default-border) !important;
+            padding: 2.5vh 0 !important;
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }

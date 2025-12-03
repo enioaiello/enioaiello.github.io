@@ -1,119 +1,121 @@
-.container .head {
+.projects {
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 1vh 0;
+    flex-wrap: wrap;
 
-    .button {
-        padding: 2%;
-        margin: 0 1vw 0 0;
-        background-color: var(--gray-color);
+    .project {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        padding: 1% 0;
+        margin: 0 0 2.5vh;
+    }
+
+    .project .image {
+        width: 100%;
+    }
+
+    .project .title {
+        margin: 0 0 2.5vh;
+    }
+
+    .project .description {
+        width: 100%;
+        margin: 1vh 0;
+        flex: 1;
+        text-align: center;
+    }
+
+    .project .button {
+        display: inline-block;
         color: var(--white-color);
-        text-decoration: none;
-        border-radius: 10px;
-    }
-
-    .button:hover {
         background-color: var(--green-color);
+        border: none;
+        border-radius: var(--default-border);
+        padding: 1% 5%;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
     }
-}
 
-.category-container,
-.project-language {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    .project .button:hover {
+        color: var(--green-color);
+        background-color: var(--white-color);
+    }
 
-    .separator {
+    .project .other {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .project .other .languages {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex: 1;
+        margin: 1vh 1vw 1vh 0;
+        overflow-x: auto;
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .project .other .languages.none {
         flex: 1;
     }
 
-    .category,
-    .language,
-    .button {
-        padding: 2%;
+    .project .other .language,
+    .project .other .button {
+        padding: 3%;
         margin: 0 1vw 0 0;
-        background-color: var(--gray-color);
-        color: var(--white-color);
+        background-color: var(--lightgray-color);
+        color: var(--black-color);
         text-decoration: none;
         border-radius: 10px;
     }
 
-    .language,
-    .button {
-        cursor: default;
-    }
-
-    .home.button {
-        cursor: pointer;
-    }
-
-    .category:hover,
-    .language:hover,
-    .button:hover {
-        background-color: var(--green-color);
-    }
-}
-
-.subtitle {
-    margin: 1vh 0;
-    font-size: 1.7rem;
-}
-
-.project-language {
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin: 2vh 0;
-
-    .language {
+    .project .other .language {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        cursor: default;
+
+        i {
+            margin: 0 0.5vw 0 0;
+        }
+    }
+
+    .project .other .language:hover,
+    .project .other .button:hover {
+        background-color: var(--green-color);
+        color: var(--white-color);
     }
 }
 
-.project-container-link {
-    display: flex;
-    flex-direction: row;
-}
+@media (prefers-color-scheme: dark) {
+    .projects .project .other .language,
+    .projects .project .other .button {
+        background-color: var(--darkgray-color) !important;
+        color: var(--white-color) !important;
+    }
 
-.project-description {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.project-footer {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.project-container-link {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end !important;
-    align-items: center;
-}
-
-.project-link {
-    padding: 2%;
-    margin: 0 1vw 0 0 !important;
-    background-color: var(--gray-color);
-    color: var(--white-color) !important;
-    text-decoration: none;
-    border-radius: 10px;
-}
-
-.project-link:hover {
-    background-color: var(--green-color);
-}
-
-#web,
-#scripts,
-#templates {
-    scroll-margin-top: 81px;
+    .projects .project .other .languages .language:hover,
+    .projects .project .other .button:hover {
+        background-color: var(--green-color) !important;
+        color: var(--white-color) !important;
+    }
 }

@@ -45,7 +45,9 @@
   { "name": "Microsoft Office", "category": "office" },
   { "name": "LibreOffice", "category": "office" },
   { "name": "OpenOffice", "category": "office" },
+  { "name": "Apple iWork", "category": "office" },
 
+  { "name": "Méthodes Waterfall", "category": "methodologies" },
   { "name": "Méthodes AGILES", "category": "methodologies" },
   { "name": "Communication non violente", "category": "methodologies" }
 ]

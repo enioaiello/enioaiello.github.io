@@ -1,0 +1,184 @@
+.project {
+    background-color: var(--white-blur);
+    border-radius: var(--default-border);
+    box-shadow: var(--default-shadow);
+    padding: 2.5%;
+
+    .head,
+    .description {
+        width: 100%;
+        margin: 1vh 0;
+        padding: 2.5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--lightgray-color);
+        border-radius: var(--default-border);
+
+        .details * {
+            margin: 1vh 0;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .details .icon {
+            width: 32px;
+            margin: 0 1vw 0 0;
+        }
+
+        .button {
+            width: auto;
+            padding: 2% 3%;
+        }
+    }
+
+    .description {
+        flex-direction: column;
+    }
+
+    .description .desc-section,
+    .description .corundum-section,
+    .description .source-section {
+        width: 100%;
+        margin: 1vh 0;
+        padding: 2.5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--white-color);
+        border-radius: var(--default-border);
+
+        .details * {
+            margin: 1vh 0;
+        }
+
+        .button {
+            width: auto;
+            padding: 2% 3%;
+        }
+    }
+
+    .description .desc-section:hover,
+    .description .corundum-section:hover,
+    .description .source-section:hover {
+        background-color: var(--white-blur);
+    }
+
+    .description {
+        width: 100%;
+        text-align: right;
+
+        .desc-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .desc-section p {
+            margin: 1vh 0 0 0;
+            text-align: left;
+        }
+    }
+
+    .links {
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+
+        .back {
+            margin: 1vh 0 0 0;
+            text-align: center;
+        }
+    }
+
+    .capture {
+        width: 100%;
+        margin: 5vh auto;
+
+        .screenshot {
+            width: 100%;
+        }
+    }
+}
+
+.button {
+    background-color: var(--green-color);
+    color: var(--white-color);
+    text-decoration: none;
+    text-align: center;
+    border-radius: var(--default-border);
+}
+
+.button:hover {
+    background-color: var(--white-color);
+    color: var(--green-color);
+}
+
+.button.disabled {
+    background-color: var(--gray-color) !important;
+    color: var(--white-color) !important;
+    cursor: default;
+}
+
+.button.back {
+    background-color: transparent;
+    color: var(--green-color);
+    border-radius: 0;
+}
+
+.description .source-section .source a,
+.description .corundum-section p a {
+    color: var(--green-color);
+    text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .project {
+        background-color: var(--black-blur) !important;
+    }
+
+    .head,
+    .description {
+        background-color: var(--darkgray-color) !important;
+    }
+
+    .description .desc-section,
+    .description .corundum-section,
+    .description .source-section {
+        background-color: var(--black-color) !important;
+    }
+
+    .description .desc-section:hover,
+    .description .corundum-section:hover,
+    .description .source-section:hover {
+        background-color: var(--black-blur) !important;
+    }
+
+    .button {
+        background-color: var(--green-color) !important;
+        color: var(--white-color) !important;
+    }
+
+    .button:hover {
+        background-color: var(--gray-color) !important;
+        color: var(--white-color) !important;
+    }
+
+    .button.disabled {
+        background-color: var(--gray-color) !important;
+        color: var(--white-color) !important;
+    }
+
+    .button.back {
+        background-color: transparent !important;
+        color: var(--green-color) !important;
+    }
+}

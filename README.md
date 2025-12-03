@@ -1,27 +1,33 @@
-# Portfolio
+<p align="center">
+	<img src="assets/images/logo.png" alt="Logo" height="128">
+</p>
 
-## Description
+## À propos de portfolio
 
-Mon portfolio. Il contient mes projets, mes projets et mes réseaux sociaux.
+Ce nouveau portfolio corrige tous les défauts de l'ancien. Entièrement reconstruit, ce portfolio est plus moderne, plus esthétique et plus simple.
 
-## Technologies
+## Fonctionnalités
 
-- HTML
-- CSS
-- JavaScript
+- Routeur JavaScript maison
+- Nouveau style plus simple
+- Nouvelle galerie
 
-## Lien
+## Installation
 
-Cliquez [ici](https://enioaiello.github.io/) pour consulter mon portfolio.
+### Clonez le dépôt
 
-## Capture d'écran
+````bash
+git clone https://github.com/enioaiello/portfolio.git
+````
 
-![Capture d'écran](./assets/images/screenshot.png)
+## Contribution
 
-## Auteur
+Vous pouvez utiliser les [Issues](https://github.com/enioaiello/portfolio/issues) pour soumettre une idée ou signaler un problème.
 
-- Enio Aiello
+## Soutiens
 
-## License
+Si vous aimez ce projet, considérez à faire un don sur ma page [GitHub Sponsors](https://github.com/sponsors/enioaiello).
 
-Ce projet est sous licence MIT. Pour plus d'informations, veuillez consulter le fichier [LICENSE](./license).
+## Licence
+
+Ce projet est distribué sous la licence MIT. Pour consulter cette licence, veuillez consulter le fichier [LICENSE](license).
