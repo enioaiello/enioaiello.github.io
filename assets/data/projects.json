@@ -19,16 +19,6 @@
         "category": "Web"
     },
     {
-        "name": "Vador",
-        "description": "Un simple \"moteur de recherche\" permettant de rechercher des programmes FOSS et de les téléchargés depuis leur lien officiel.",
-        "image": "../assets/images/projects/vador.png",
-        "languages": ["HTML", "CSS", "JS"],
-        "github": ["enioaiello", "vador"],
-        "link": "https://enioaiello.github.io/vador",
-        "information": "/project/vador",
-        "category": "Web"
-    },
-    {
         "name": "Horizon",
         "description": "Le site Web de mon serveur Discord.",
         "image": "../assets/images/projects/horizon.png",

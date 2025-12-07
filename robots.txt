@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /views/contact.html
-Disallow: /views/projets.html
-Disallow: /views/ressources.html
