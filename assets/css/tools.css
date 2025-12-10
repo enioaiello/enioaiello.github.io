@@ -121,13 +121,34 @@
         background-color: var(--gray-color);
     }
 
-    .tool .description .badges .power {
+    .tool .description .badges .power,
+    .tool .description .badges .ocpl,
+    .tool .description .badges .jailbreak,
+    .tool .description .badges .dualboot {
         padding: 1%;
         margin: 0 1vw 0 0;
-        background-color: var(--blue-color);
-        color: var(--white-color);
         text-decoration: none;
         border-radius: 10px;
+    }
+
+    .tool .description .badges .power {
+        background-color: var(--blue-color);
+        color: var(--white-color);
+    }
+
+    .tool .description .badges .ocpl {
+        background-color: var(--purple-color);
+        color: var(--white-color);
+    }
+
+    .tool .description .badges .jailbreak {
+        background-color: var(--orange-color);
+        color: var(--white-color);
+    }
+
+    .tool .description .badges .dualboot {
+        background-color: var(--black-color);
+        color: var(--white-color);
     }
 }
 
