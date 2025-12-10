@@ -11,8 +11,9 @@
     border-radius: var(--default-border);
     box-shadow: var(--default-shadow);
     background: none;
+    background-color: var(--white-blur);
 
-    color: var(--white-color);
+    color: var(--black-color);
 
     .content {
         height: 100%;
@@ -122,6 +123,8 @@
     border-radius: var(--default-border);
     box-shadow: var(--default-shadow);
     background: none;
+    background-color: var(--white-blur);
+
     color: var(--black-color);
 
     .button {
@@ -360,6 +363,7 @@
 @media (prefers-color-scheme: dark) {
     .main #home {
         color: var(--white-color) !important;
+        background-color: var(--dark-blur) !important;
     }
 
     .main #skills,
@@ -379,6 +383,7 @@
 
     .main #curriculum-vitae {
         color: var(--white-color) !important;
+        background-color: var(--dark-blur) !important;
     }
 
     .main #curriculum-vitae .button:hover {
