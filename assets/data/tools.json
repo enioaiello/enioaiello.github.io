@@ -4,7 +4,10 @@
     "name": "macOS Sequoia",
     "category": "os",
     "state": "used",
-    "badge": "power",
+    "badge": [
+      "power", 
+      "ocpl"
+    ],
     "version": "15.5"
   },
   {
@@ -12,7 +15,9 @@
     "name": "macOS Sonoma",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+      "ocpl"
+    ],
     "version": "14.7"
   },
   {
@@ -20,7 +25,9 @@
     "name": "macOS Ventura",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [ 
+      "ocpl"
+    ],
     "version": "13.7"
   },
   {
@@ -28,7 +35,9 @@
     "name": "macOS Catalina",
     "category": "os",
     "state": "not-used",
-    "badge": "power",
+    "badge": [
+      "power"
+    ],
     "version": "10.15.7"
   },
   {
@@ -36,7 +45,9 @@
     "name": "macOS High Sierra",
     "category": "os",
     "state": "not-used",
-    "badge": "power",
+    "badge": [
+      "power"
+    ],
     "version": "10.13.6"
   },
   {
@@ -44,7 +55,9 @@
     "name": "macOS Sierra",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "10.12.6"
   },
   {
@@ -52,7 +65,9 @@
     "name": "OS X El Capitan",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "10.11.6"
   },
   {
@@ -60,7 +75,9 @@
     "name": "OS X Lion",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "10.7.5"
   },
   {
@@ -68,7 +85,9 @@
     "name": "OS X Snow Leopard",
     "category": "os",
     "state": "used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "10.6.8"
   },
   {
@@ -76,7 +95,9 @@
     "name": "Mac OS 8",
     "category": "os",
     "state": "used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "8.6"
   },
   {
@@ -84,7 +105,9 @@
     "name": "Windows 11",
     "category": "os",
     "state": "not-used",
-    "badge": "power",
+    "badge": [
+      "power"
+    ],
     "version": "24h2"
   },
   {
@@ -92,7 +115,9 @@
     "name": "Windows 10",
     "category": "os",
     "state": "not-used",
-    "badge": "power",
+    "badge": [
+      "power"
+    ],
     "version": "22h2"
   },
   {
@@ -100,7 +125,9 @@
     "name": "Windows 7",
     "category": "os",
     "state": "used",
-    "badge": "power",
+    "badge": [
+      "power"
+    ],
     "version": "SP1"
   },
   {
@@ -108,7 +135,9 @@
     "name": "Windows XP",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "SP3"
   },
   {
@@ -116,15 +145,19 @@
     "name": "iOS 26",
     "category": "os",
     "state": "used",
-    "badge": "",
-    "version": "26.0 (public beta 4)"
+    "badge": [
+
+    ],
+    "version": "26.1"
   },
   {
     "icon": "os/ios/18.png",
     "name": "iOS 18",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "18.6.2"
   },
   {
@@ -132,7 +165,9 @@
     "name": "iOS 17",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "17.7.2"
   },
   {
@@ -140,7 +175,9 @@
     "name": "iOS 16",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "16.7.11"
   },
   {
@@ -148,7 +185,9 @@
     "name": "iOS 15",
     "category": "os",
     "state": "used",
-    "badge": "",
+    "badge": [
+      "jailbreak"
+    ],
     "version": "15.8.4"
   },
   {
@@ -156,7 +195,9 @@
     "name": "iOS 14",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+      "jailbreak"
+    ],
     "version": "14.8.1"
   },
   {
@@ -164,7 +205,9 @@
     "name": "iOS 10",
     "category": "os",
     "state": "used",
-    "badge": "",
+    "badge": [
+      "jailbreak"
+    ],
     "version": "10.3.3"
   },
   {
@@ -172,7 +215,9 @@
     "name": "iOS 9",
     "category": "os",
     "state": "used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "9.3.6"
   },
   {
@@ -180,7 +225,9 @@
     "name": "iOS 8",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+      "jailbreak"
+    ],
     "version": "8.4.1"
   },
   {
@@ -188,7 +235,10 @@
     "name": "iOS 6",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+      "jailbreak",
+      "dualboot"
+    ],
     "version": "6.1.6"
   },
   {
@@ -196,7 +246,9 @@
     "name": "Android 11",
     "category": "os",
     "state": "used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "11.0.0_r76"
   },
   {
@@ -204,7 +256,9 @@
     "name": "Android 10",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "10.0.0_r75"
   },
   {
@@ -212,7 +266,9 @@
     "name": "Android 9",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "9.0.0_r76"
   },
   {
@@ -220,7 +276,9 @@
     "name": "Android 6",
     "category": "os",
     "state": "used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "6.0.1_r81"
   },
   {
@@ -228,7 +286,9 @@
     "name": "Android 4.0.4",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "4.0.4"
   },
   {
@@ -236,7 +296,9 @@
     "name": "watchOS 10",
     "category": "os",
     "state": "used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "10.6.1"
   },
   {
@@ -244,7 +306,9 @@
     "name": "watchOS 9",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+      
+    ],
     "version": "9.6.3"
   },
   {
@@ -252,7 +316,9 @@
     "name": "Arch Linux",
     "category": "os",
     "state": "used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "2025.08.01"
   },
   {
@@ -260,7 +326,9 @@
     "name": "Ubuntu 24.04",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "24.04"
   },
   {
@@ -268,7 +336,9 @@
     "name": "Ubuntu 23.10",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "23.10"
   },
   {
@@ -276,7 +346,9 @@
     "name": "Ubuntu 22.04",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "22.04"
   },
   {
@@ -284,7 +356,9 @@
     "name": "Ubuntu Mate 18.10",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "18.10"
   },
   {
@@ -292,7 +366,9 @@
     "name": "Ubuntu Mate 16.10",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "16.10"
   },
   {
@@ -300,7 +376,9 @@
     "name": "Fedora 42",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "42"
   },
   {
@@ -308,7 +386,9 @@
     "name": "Fedora 41",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "41"
   },
   {
@@ -316,7 +396,9 @@
     "name": "Fedora 40",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "40"
   },
   {
@@ -324,7 +406,9 @@
     "name": "Fedora 39",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "39"
   },
   {
@@ -332,7 +416,9 @@
     "name": "elementaryOS 8",
     "category": "os",
     "state": "used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "8.0"
   },
   {
@@ -340,7 +426,9 @@
     "name": "elementaryOS 7",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "7.1"
   },
   {
@@ -348,7 +436,9 @@
     "name": "Raspberry Pi OS",
     "category": "os",
     "state": "used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "12.11"
   },
   {
@@ -356,7 +446,9 @@
     "name": "Raspbian",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "9.13"
   },
   {
@@ -364,7 +456,9 @@
     "name": "Debian 12",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "12.11"
   },
   {
@@ -372,7 +466,9 @@
     "name": "Debian 11",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "11.11"
   },
   {
@@ -380,7 +476,9 @@
     "name": "Debian 10",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "10.13"
   },
   {
@@ -388,7 +486,9 @@
     "name": "Debian 9",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "9.13"
   },
   {
@@ -396,7 +496,9 @@
     "name": "Windows 11 LTSC Entreprise 2024",
     "category": "os",
     "state": "used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "24h2"
   },
   {
@@ -404,7 +506,9 @@
     "name": "Windows 10 LTSC Entreprise 2021",
     "category": "os",
     "state": "used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "22h2"
   },
   {
@@ -412,7 +516,9 @@
     "name": "ReactOS",
     "category": "os",
     "state": "not-used",
-    "badge": "",
+    "badge": [
+
+    ],
     "version": "0.4.15"
   },
   {
@@ -420,7 +526,9 @@
     "name": "Luma3DS",
     "category": "os",
     "state": "used",
-    "badge": "power",
+    "badge": [
+      "power"
+    ],
     "version": "13.3.3 (11.17.0-50E)"
   }
 ]
