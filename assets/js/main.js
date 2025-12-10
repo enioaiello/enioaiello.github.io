@@ -231,13 +231,16 @@ async function loadTools() {
 
         // Défini les badges
         const badges = {
-            "power": "Power User"
+            "power": "Power User",
+            "ocpl": "OpenCore Legacy Patcher",
+            "jailbreak": "Jailbreaked",
+            "dualboot": "Dual Booted"
         };
 
         // Trie les outils par catégorie
         const toolsByCategory = tools.reduce((acc, tool) => {
             if (!acc[tool.category]) {
-                acc[tool.category] = [];
+            acc[tool.category] = [];
             }
             acc[tool.category].push(tool);
             return acc;
@@ -247,13 +250,17 @@ async function loadTools() {
         const generateToolHTML = (tool) => {
             // Gestion du badge et de l'état
             let badgesHTML = '<div class="badges">';
-            if (tool.badge && badges[tool.badge]) {
-                badgesHTML += `<span class="${[tool.badge]}">${badges[tool.badge]}</span>`;
+            if (tool.badge) {
+            tool.badge.forEach(badge => {
+                if (badges[badge]) {
+                badgesHTML += `<span class="${badge}">${badges[badge]}</span>`;
+                }
+            });
             }
             if (tool.state === "used") {
-                badgesHTML += ` <span class="state used">Utilisé</span>`;
+            badgesHTML += ` <span class="state used">Utilisé</span>`;
             } else if (tool.state === "not-used") {
-                badgesHTML += ` <span class="state not-used">Pas utilisé dernièrement</span>`;
+            badgesHTML += ` <span class="state not-used">Pas utilisé dernièrement</span>`;
             }
             badgesHTML += '</div>';
 
@@ -261,32 +268,32 @@ async function loadTools() {
             const iconPath = "https://enioaiello.github.io/assets/images/tools/" + tool.icon;
 
             return `
-                <div class="tool">
-                    <img src="${iconPath}" alt="Logo de ${tool.name}" class="icon">
-                    <div class="description">
-                        <h3 class="title">${tool.name}</h3>
-                        <h4 class="version">${tool.version}</h4>
-                        ${badgesHTML}
-                    </div>
+            <div class="tool">
+                <img src="${iconPath}" alt="Logo de ${tool.name}" class="icon">
+                <div class="description">
+                <h3 class="title">${tool.name}</h3>
+                <h4 class="version">${tool.version}</h4>
+                ${badgesHTML}
                 </div>
+            </div>
             `;
         };
 
         // Affiche les outils par catégorie
         if (osContainer) {
             osContainer.innerHTML = toolsByCategory.os
-                ? toolsByCategory.os
-                    .map(tool => generateToolHTML(tool))
-                    .join('')
-                : '<p class="empty">Aucun système d\'exploitation disponible pour le moment.</p>';
+            ? toolsByCategory.os
+                .map(tool => generateToolHTML(tool))
+                .join('')
+            : '<p class="empty">Aucun système d\'exploitation disponible pour le moment.</p>';
         }
 
         if (softwareContainer) {
             softwareContainer.innerHTML = toolsByCategory.software
-                ? toolsByCategory.software
-                    .map(tool => generateToolHTML(tool))
-                    .join('')
-                : '<p class="empty">Aucun logiciel disponible pour le moment.</p>';
+            ? toolsByCategory.software
+                .map(tool => generateToolHTML(tool))
+                .join('')
+            : '<p class="empty">Aucun logiciel disponible pour le moment.</p>';
         }
 
     } catch (err) {
