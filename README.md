@@ -2,15 +2,22 @@
 	<img src="assets/images/logo.png" alt="Logo" height="128">
 </p>
 
-## À propos de portfolio
+## À propos du portfolio
 
-Ce nouveau portfolio corrige tous les défauts de l'ancien. Entièrement reconstruit, ce portfolio est plus moderne, plus esthétique et plus simple.
+Vitrine numérique de mes projets et compétences en développement web.
+
+Ce site a été conçu avec une approche minimaliste et moderne, mettant en valeur mes réalisations à travers une interface intuitive. 
+
+Développé avec des technologies web standards, il présente mes travaux de manière élégante et professionnelle.
 
 ## Fonctionnalités
 
 - Routeur JavaScript maison
-- Nouveau style plus simple
-- Nouvelle galerie
+- Style simple et moderne
+- Page recruteur
+- Page de présentation de mes projets
+- Page de présentation de mes outils
+- Page de mise à disposition de ressources
 
 ## Installation
 
