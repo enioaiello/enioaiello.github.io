@@ -530,5 +530,461 @@
       "power"
     ],
     "version": "13.3.3 (11.17.0-50E)"
+  },
+  {
+    "icon": "software/office/msoffice/365.png",
+    "name": "Microsoft 365",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "19426.20218"
+  },
+  {
+    "icon": "software/office/msoffice/2016.png",
+    "name": "Microsoft Office 2021 Pro Plus",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "14334.20440"
+  },
+  {
+    "icon": "software/office/msoffice/2016.png",
+    "name": "Microsoft Office 2019 Pro Plus",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "10417.20080"
+  },
+  {
+    "icon": "software/office/msoffice/2016.png",
+    "name": "Microsoft Office 2016 Mac",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "16.104"
+  },
+  {
+    "icon": "software/office/msoffice/2011.png",
+    "name": "Microsoft Office 2011 Mac",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "14.6.1"
+  },
+  {
+    "icon": "software/office/msoffice/2010.png",
+    "name": "Microsoft Office 2010 Pro Plus",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "14.0.7261.5000"
+  },
+  {
+    "icon": "software/office/msoffice/2007.png",
+    "name": "Microsoft Office 2007 Pro Plus",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "SP3"
+  },
+  {
+    "icon": "software/office/libreoffice.png",
+    "name": "LibreOffice",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "25.8.4"
+  },
+  {
+    "icon": "software/office/openoffice.png",
+    "name": "OpenOffice",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "4.1.16"
+  },
+  {
+    "icon": "software/office/iwork/current.png",
+    "name": "Apple iWork",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "14.4"
+  },
+  {
+    "icon": "software/office/iwork/09.png",
+    "name": "Apple iWork '09",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "—"
+  },
+  {
+    "icon": "software/office/google-workspace.png",
+    "name": "Google Workspace (Student)",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "—"
+  },
+  {
+    "icon": "software/dev/phpstorm.png",
+    "name": "PhpStorm",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "2023.3.2"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "WebStorm",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "2023.3.2"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Visual Studio Code",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "1.85.1"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "VSCodium",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "1.85.1"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Sublime Text",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "4.0.0"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Atom",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "1.60.0"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "VIM",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "9.0.2121"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Google Chrome",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "120.0.6099.129"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Microsoft Edge",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "120.0.2210.89"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Mozilla Firefox",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "121.0"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Safari",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "17.2.1"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Arc Browser",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "1.21.1"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Affinity Designer",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "2.2.1"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Adobe Photoshop CS2",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "9.0"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "iMovie",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "10.4"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "VMware Fusion",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "13.5.1"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "VMware Workstation",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "17.5.1"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "VirtualBox 6",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "6.1.44"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Carbon Copy Cloner",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "6.1.5"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Macrium Reflect",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "8.0.7288"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "DaVinci Resolve",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "18.6.5"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Postman",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "10.21.3"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Cyberduck",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "8.7.1"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "FileZilla",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "3.66.4"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "PuTTY",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "0.79"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "WinSCP",
+    "category": "software",
+    "state": "not-used",
+    "badge": [],
+    "version": "6.1.2"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Figma",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "116.14.7"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "TeamViewer",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "15.47.3"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "AnyDesk",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "7.1.16"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "balenaEtcher",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "1.18.11"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Ventoy",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "1.0.96"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Notion",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "3.0.0"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "OpenMTP",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "3.1.11"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "MusicBrainz Picard",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "2.11"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Wireshark",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "4.2.2"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Docker",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "24.0.7"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Automator",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "2.10"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "GParted",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "1.5.0"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Slack",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "4.35.126"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Discord",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "0.0.36"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Stoat",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "1.0.0"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Git",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "2.43.0"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Firefox Developer Edition",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "122.0b3"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "PyCharm",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "2023.3.2"
+  },
+  {
+    "icon": "placeholder-1024x1024.png",
+    "name": "Virt Manager",
+    "category": "software",
+    "state": "used",
+    "badge": [],
+    "version": "5.1.0"
   }
 ]

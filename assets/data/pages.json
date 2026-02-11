@@ -45,14 +45,19 @@
     "view": "views/projects/atomix.html",
     "style": "assets/css/project-details.css"
   },
-  "/project/quick": {
-    "title": "Quick",
+  "/project/corundum-quick": {
+    "title": "Corundum Quick",
     "view": "views/projects/quick.html",
     "style": "assets/css/project-details.css"
   },
+  "/project/corundum-fast": {
+    "title": "Corundum Fast",
+    "view": "views/projects/fast.html",
+    "style": "assets/css/project-details.css"
+  },
   "/project/corundum-maintenance": {
-    "title": "Corundum maintenance",
-    "view": "views/projects/corundum-maintenance.html",
+    "title": "Corundum Maintenance",
+    "view": "views/projects/maintenance.html",
     "style": "assets/css/project-details.css"
   },
   "/project/config-ish": {
@@ -68,6 +73,11 @@
   "/project/lumix": {
     "title": "Lumix",
     "view": "views/projects/lumix.html",
+    "style": "assets/css/project-details.css"
+  },
+  "/project/zyra": {
+    "title": "Zyra",
+    "view": "views/projects/zyra.html",
     "style": "assets/css/project-details.css"
   },
   "/hire": {
@@ -114,5 +124,14 @@
   },
   "/youtube": {
     "link": "https://www.youtube.com/@enioaiello"
+  },
+  "/paypal": {
+    "link": "https://paypal.me/EnioAiello475"
+  },
+  "/github-sponsors": {
+    "link": "https://github.com/sponsors/enioaiello"
+  },
+  "/email": {
+    "link": "mailto:contact@enioaiello.fr"
   }
 }

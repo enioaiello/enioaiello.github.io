@@ -3,7 +3,7 @@
         "name": "Admin Services",
         "description": "Plateforme web permettant aux utilisateurs de déployer et gérer facilement leurs applications en ligne.",
         "image": "../assets/images/projects/admin-services.png",
-        "languages": ["PHP", "MySQL", "Laravel"],
+        "languages": ["PHP", "MySQL"],
         "github": ["enioaiello", "admin-services"],
         "information": "/project/admin-services",
         "category": "Web"
@@ -32,37 +32,37 @@
         "name": "Atomix",
         "description": "Un projet expérimental de framework CSS compilé via SCSS. Ultra simple à maitriser.",
         "image": "../assets/images/projects/atomix.png",
-        "languages": ["SCSS", "CSS"],
+        "languages": ["CSS"],
         "github": ["enioaiello", "atomix"],
         "information": "/project/atomix",
         "category": "Web"
     },
     {
-        "name": "Quick",
+        "name": "Corundum Quick",
         "description": "Un site permettant aux utilisateurs macOS (et Linux) de télécharger leurs applications en une seule commande.",
         "image": "../assets/images/projects/quick.png",
-        "languages": ["HTML", "CSS", "JS", "Bootstrap"],
+        "languages": ["HTML", "CSS", "JS"],
         "github": ["corundumproject", "quick"],
         "link": "https://corundumproject.github.io/quick",
-        "information": "/project/quick",
+        "information": "/project/corundum-quick",
         "category": "Web"
     },
     {
-        "name": "Corundum maintenance",
+        "name": "Corundum Fast",
+        "description": "Téléchargez, mettez à jour et supprimez toutes vos applications rapidement, grâce à la base de données de Corundum Quick.",
+        "image": "../assets/images/projects/fast.png",
+        "languages": ["HTML", "CSS", "JS"],
+        "github": ["corundumproject", "fast"],
+        "information": "/project/corundum-fast",
+        "category": "Application"
+    },
+    {
+        "name": "Corundum Maintenance",
         "description": "Un simple script permettant l'administration et la maintenance de poste de travail Microsoft Windows.",
-        "image": "../assets/images/projects/corundum-maintenance.png",
+        "image": "../assets/images/projects/maintenance.png",
         "languages": ["Batch"],
         "github": ["corundumproject", "maintenance"],
         "information": "/project/corundum-maintenance",
-        "category": "Scripts"
-    },
-    {
-        "name": "Config iSH",
-        "description": "Un script Shell permettant de configurer iSH pour le rendre plus pratique",
-        "image": "../assets/images/projects/corundum-maintenance.png",
-        "languages": ["Shell"],
-        "github": ["enioaiello", "config-ish"],
-        "information": "/project/config-ish",
         "category": "Scripts"
     },
     {
@@ -80,6 +80,14 @@
         "image": "../assets/images/projects/lumix.png",
         "github": ["enioaiello", "lumix"],
         "information": "/project/lumix",
+        "category": "Templates"
+    },
+    {
+        "name": "Zyra",
+        "description": "Zyra est un micro-framework PHP MVC léger conçu pour créer des applications web simples.",
+        "image": "../assets/images/projects/zyra.png",
+        "github": ["enioaiello", "zyra"],
+        "information": "/project/zyra",
         "category": "Templates"
     }
 ]

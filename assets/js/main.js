@@ -71,11 +71,11 @@ async function loadHome() {
 
         if (!container) return;
 
-        // Sélectionner aléatoirement 6 projets maximum
+        // Sélectionner aléatoirement un certain nombre de projets
         const shuffledProjects = projects
             .filter(project => project.category !== "Templates")
             .sort(() => Math.random() - 0.5)
-            .slice(0, 6);
+            .slice(0, window.innerWidth <= 624 ? 2 : window.innerWidth <= 992 ? 4 : 6)
 
         // Mapping des icônes Remixicon pour les langages/outils
         const languageIcons = {
@@ -84,13 +84,16 @@ async function loadHome() {
             "CSS": '<i class="ri-css3-fill"></i>',
             "JS": '<i class="ri-javascript-fill"></i>',
             "Bootstrap": '<i class="ri-bootstrap-fill"></i>',
-            "Batch": '<i class="ri-terminal-fill"></i>'
+            "Batch": '<i class="ri-terminal-line"></i>',
+            "Shell": '<i class="ri-terminal-line"></i>',
+            "MySQL": '<i class="ri-database-2-fill"></i>'
         };
 
         container.innerHTML = shuffledProjects.map(p => `
             <div class="project">
                 <img src="${p.image}" alt="Capture d'écran ${p.name}" class="image">
                 <h3 class="title">${p.name}</h3>
+                <p class="description">${p.description}</p>
                 <div class="other">
                     ${p.languages ? `
                         <div class="languages">
@@ -101,14 +104,25 @@ async function loadHome() {
                             `).join('')}
                         </div>
                 ` : ''}
-                    <a href="#${p.information}" class="button">
+                    <a href="#${p.information}" class="button informations">
                         <i class="ri-information-fill"></i>
                     </a>
                 </div>
             </div>
         `).join('');
+
+        container.addEventListener('click', (event) => {
+            if (event.target.closest('.informations')) return;
+
+            const project = event.target.closest('.project');
+            if (!project) return;
+
+            // Ouvrir une route
+            window.location.hash = project.querySelector('.informations').getAttribute('href');
+        });
+
         container.innerHTML += `
-            <a href="#/projects" class="link more-projects"><i class="ri-folder-open-fill"></i> En voir plus</a>
+            <a href="#/projects" class="button more-projects"><span class="text">En voir plus</span> <i class="ri-folder-open-fill"></i></a>
         `;
     } catch (err) {
         console.error('Erreur lors du chargement des projets :', err);
@@ -122,14 +136,13 @@ async function loadHome() {
 
         container.innerHTML = ressources.map(r => `
             <div class="ressource">
-                <img src="assets/images/ressources/${r.image}" alt="${r.name}" class="image">
                 <h3 class="title">${r.name}</h3>
                 <h4 class="date">${r.date}</h4>
                 <p class="text">${r.description}</p>
             </div>
         `).join('');
         container.innerHTML += `
-            <a href="#/ressources" class="link more-ressources"><i class="ri-folder-open-fill"></i> En voir plus</a>
+            <a href="#/ressources" class="button more-ressources"><span class="text">En voir plus</span> <i class="ri-folder-open-fill"></i></a>
         `;
 
         // Ajouter les event listeners
@@ -158,14 +171,16 @@ async function loadProjects() {
             "HTML": '<i class="ri-html5-fill icon"></i>',
             "CSS": '<i class="ri-css3-fill"></i>',
             "JS": '<i class="ri-javascript-fill"></i>',
-            "Bootstrap": '<i class="ri-bootstrap-fill"></i>',
-            "Batch": '<i class="ri-terminal-fill"></i>'
+            "Shell": '<i class="ri-terminal-line"></i>',
+            "Batch": '<i class="ri-terminal-line"></i>',
+            "MySQL": '<i class="ri-database-2-fill"></i>'
         };
 
         container.innerHTML = projects.map(p => `
             <div class="project">
                 <img src="${p.image}" alt="Capture d'écran ${p.name}" class="image">
                 <h3 class="title">${p.name}</h3>
+                <p class="description">${p.description}</p>
                 <div class="other">
                     ${p.languages ? `
                         <div class="languages">
@@ -176,12 +191,22 @@ async function loadProjects() {
                             `).join('')}
                         </div>
                 ` : '<div class="languages none"></div>'}
-                    <a href="#${p.information}" class="button">
+                    <a href="#${p.information}" class="button informations">
                         <i class="ri-information-fill"></i>
                     </a>
                 </div>
             </div>
         `).join('');
+
+        container.addEventListener('click', (event) => {
+            if (event.target.closest('.informations')) return;
+
+            const project = event.target.closest('.project');
+            if (!project) return;
+
+            // Ouvrir une route
+            window.location.hash = project.querySelector('.informations').getAttribute('href');
+        });
     } catch (err) {
         console.error('Erreur lors du chargement des projets :', err);
     }
@@ -197,7 +222,6 @@ async function loadRessources() {
 
         container.innerHTML = ressources.map(r => `
             <div class="ressource">
-                <img src="assets/images/ressources/${r.image}" alt="${r.name}" class="image">
                 <h3 class="title">${r.name}</h3>
                 <h4 class="date">${r.date}</h4>
                 <p class="text">${r.description}</p>
@@ -265,7 +289,13 @@ async function loadTools() {
             badgesHTML += '</div>';
 
             // URL de l'icône
-            const iconPath = "https://enioaiello.github.io/assets/images/tools/" + tool.icon;
+            let iconPath;
+
+            if (tool.icon == "placeholder-1024x1024.png") {
+                iconPath = "assets/images/placeholders/" + tool.icon;
+            } else {
+                iconPath = "assets/images/tools/" + tool.icon;
+            }
 
             return `
             <div class="tool">
