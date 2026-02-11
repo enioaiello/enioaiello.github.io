@@ -10,8 +10,7 @@
 
     border-radius: var(--default-border);
     box-shadow: var(--default-shadow);
-    background: none;
-    background-color: var(--white-blur);
+    background: var(--white-blur);
 
     color: var(--black-color);
 
@@ -26,22 +25,6 @@
 
     .content * {
         margin: 1vh 0;
-    }
-
-    .content .button {
-        color: var(--white-color);
-        background-color: var(--green-color);
-        border: none;
-        border-radius: var(--default-border);
-        padding: 1% 5%;
-        cursor: pointer;
-        text-decoration: none;
-        text-align: center;
-    }
-
-    .content .button:hover {
-        color: var(--green-color);
-        background-color: var(--white-color);
     }
 
     .profile-picture {
@@ -122,25 +105,9 @@
     align-items: center;
     border-radius: var(--default-border);
     box-shadow: var(--default-shadow);
-    background: none;
-    background-color: var(--white-blur);
+    background: var(--white-blur);
 
     color: var(--black-color);
-
-    .button {
-        margin: 2.5vh 0;
-        padding: 1% 5%;
-        background-color: var(--green-color);
-        color: var(--white-color);
-        text-align: center;
-        text-decoration: none;
-        border-radius: 10px;
-    }
-
-    .button:hover {
-        background-color: var(--white-color);
-        color: var(--green-color);
-    }
 
     .text small {
         display: block;
@@ -170,16 +137,25 @@
 
     .refresh-container #refresh,
     .refresh-container #all-projects {
-        font-size: 1.2rem;
-        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5vw;
+        padding: 1% 3%;
+        margin: 0 1vw;
+        background-color: var(--lightgray-color);
+        color: var(--black-color);
+        text-decoration: none;
+        border-radius: var(--default-border);
+        transition: background-color 0.25s ease, color 0.25s ease;
         border: none;
         outline: none;
-        cursor: pointer;
     }
 
     .refresh-container #refresh:hover,
     .refresh-container #all-projects:hover {
-        color: var(--green-color);
+        background-color: var(--green-color);
+        color: var(--white-color);
     }
 }
 
@@ -214,23 +190,6 @@
         margin: 1vh 0;
         flex: 1;
         text-align: center;
-    }
-
-    .project .button {
-        display: inline-block;
-        color: var(--white-color);
-        background-color: var(--green-color);
-        border: none;
-        border-radius: var(--default-border);
-        padding: 1% 5%;
-        cursor: pointer;
-        text-decoration: none;
-        text-align: center;
-    }
-
-    .project .button:hover {
-        color: var(--green-color);
-        background-color: var(--white-color);
     }
 
     .project .other {
@@ -371,7 +330,7 @@
     .main #particularity {
         .skill,
         .element {
-            background-color: var(--darkgray-color) !important;
+            background-color: var(--darkergray-color) !important;
             color: var(--white-color) !important;
         }
 
@@ -403,7 +362,7 @@
 
     .projects .project .other .language,
     .projects .project .other .button {
-        background-color: var(--darkgray-color) !important;
+        background-color: var(--darkergray-color) !important;
         color: var(--white-color) !important;
     }
 

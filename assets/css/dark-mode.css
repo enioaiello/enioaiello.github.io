@@ -24,17 +24,12 @@
         background-color: var(--black-blur);
     }
 
-    .footer .content {
-        background-color: var(--black-blur);
-        color: var(--white-color);
-    }
-
     .loading-page,
     .error {
         background-color: var(--black-blur) !important;
 
         .button:hover {
-            background-color: var(--darkgray-color) !important;
+            background-color: var(--darkergray-color) !important;
             color: var(--white-color) !important;
         }
     }

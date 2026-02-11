@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
 
     .project {
@@ -14,6 +14,9 @@
 
         padding: 1% 0;
         margin: 0 0 2.5vh;
+
+        background-color: var(--lightergray-color);
+        border-radius: var(--default-border);
     }
 
     .project .image {
@@ -25,27 +28,14 @@
     }
 
     .project .description {
-        width: 100%;
-        margin: 1vh 0;
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
         flex: 1;
         text-align: center;
-    }
-
-    .project .button {
-        display: inline-block;
-        color: var(--white-color);
-        background-color: var(--green-color);
-        border: none;
-        border-radius: var(--default-border);
-        padding: 1% 5%;
-        cursor: pointer;
-        text-decoration: none;
-        text-align: center;
-    }
-
-    .project .button:hover {
-        color: var(--green-color);
-        background-color: var(--white-color);
+        justify-content: center;
+        align-items: center;
+        min-height: 4em;
     }
 
     .project .other {
@@ -65,7 +55,7 @@
         align-items: center;
         flex-wrap: nowrap;
         flex: 1;
-        margin: 1vh 1vw 1vh 0;
+        margin: 1vh 1vw;
         overflow-x: auto;
 
         -ms-overflow-style: none;
@@ -83,7 +73,7 @@
         background-color: var(--lightgray-color);
         color: var(--black-color);
         text-decoration: none;
-        border-radius: 10px;
+        border-radius: var(--default-border);
     }
 
     .project .other .language {
@@ -107,9 +97,13 @@
 }
 
 @media (prefers-color-scheme: dark) {
+    .projects .project {
+        background-color: var(--darkgray-color) !important;
+    }
+
     .projects .project .other .language,
     .projects .project .other .button {
-        background-color: var(--darkgray-color) !important;
+        background-color: var(--darkergray-color) !important;
         color: var(--white-color) !important;
     }
 

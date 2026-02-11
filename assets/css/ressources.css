@@ -7,10 +7,12 @@
     padding: 3vh 0;
 
     .ressource {
+        width: 100%;
         cursor: pointer;
         padding: 2.5%;
         margin: 2.5vh 0;
         border-radius: var(--default-border);
+        background-color: var(--lightergray-color);
     }
 
     .ressource:first-child {
@@ -44,11 +46,15 @@
 }
 
 @media (prefers-color-scheme: dark) {
+    .ressources .ressource {
+        background-color: var(--darkgray-color) !important;
+    }
+
     .ressources .ressource .date {
         color: var(--white-color) !important;
     }
 
     .ressources .ressource:hover {
-        background-color: var(--darkgray-color) !important;
+        background-color: var(--darkergray-color) !important;
     }
 }

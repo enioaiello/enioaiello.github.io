@@ -33,8 +33,7 @@
     }
 
     .header .navbar,
-    .main,
-    .footer .content {
+    .main {
         width: 90%;
     }
 
@@ -71,33 +70,39 @@
         }
     }
 
-    .tools .tool {
+    .main .tools .tool {
+        display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;
         align-items: center !important;
 
+        gap: 2.5vh;
+
         * {
-            margin: 0.5vh 0 !important;
+            text-align: center;
         }
 
-        *:first-child,
-        *:last-child {
-            margin: 0 0 0.5vh 0 !important;
-        }
-
-        .description,
-        .badges {
-            width: 100% !important;
-            justify-content: center !important;
+        .content {
+            width: 90% !important;
             align-items: center !important;
         }
 
-        .badges * {
-            margin: 0 0.5vw 0 0 !important;
+        .title {
+            margin: 0 0 2.5vh 0;
         }
 
-        .badges *:last-child {
-            margin: 0 !important;
+        .description {
+            width: 90%;
+        }
+
+        .button {
+            border-radius: var(--default-border) !important;
+            padding: 2.5vh 0 !important;
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -117,5 +122,35 @@
         flex-direction: row !important;
         justify-content: flex-end !important;
         align-items: center !important;
+    }
+
+    .main #horizon .button,
+    .main #hire .button,
+    .main #corundum .button,
+    .main #projects .more-projects,
+    .main #ressources .more-ressources,
+    .main #donation .services .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .span {
+            text-align: center;
+            width: 100%;
+        }
+
+        i {
+            display: block;
+            position: absolute !important;
+            right: 5vw !important;
+            left: auto !important;
+        }
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1400px) {
+    .project {
+        width: 30% !important;
     }
 }

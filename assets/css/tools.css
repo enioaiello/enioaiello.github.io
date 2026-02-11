@@ -6,18 +6,66 @@
     align-items: center;
     flex-wrap: wrap;
 
-    .category {
-        padding: 1.5%;
+    background-color: var(--lightergray-color);
+
+    padding: 1%;
+
+    border-radius: var(--default-border);
+
+    .list {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+
+        .category {
+            padding: 1.5%;
+            margin: 0 1vw 0 0;
+            background-color: var(--lightgray-color);
+            color: var(--black-color);
+            text-decoration: none;
+            border-radius: var(--default-border);
+        }
+
+        .category:hover {
+            background-color: var(--green-color);
+            color: var(--white-color);
+        }
+
+        .category.active {
+            background-color: var(--green-color);
+            color: var(--white-color);
+        }
+    }
+
+    .search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .search label {
+        width: 100%;
+    }
+
+    .search label input {
+        padding: 2.5vh 1vw;
         margin: 0 1vw 0 0;
         background-color: var(--lightgray-color);
         color: var(--black-color);
         text-decoration: none;
-        border-radius: 10px;
+        border-radius: var(--default-border);
+
+        outline: none;
+        border: none;
     }
 
-    .category:hover {
-        background-color: var(--green-color);
-        color: var(--white-color);
+    .search label input:hover {
+        background-color: var(--lightgray-color);
+    }
+
+    .search label input:focus {
+        outline: 2.5px solid var(--green-color);
     }
 }
 
@@ -100,6 +148,9 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+
+        cursor: default;
+        pointer-events: none;
     }
 
     .tool .description .state {
@@ -147,14 +198,18 @@
     }
 
     .tool .description .badges .dualboot {
-        background-color: var(--black-color);
-        color: var(--white-color);
+        background-color: var(--yellow-color);
+        color: var(--black-color);
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    .categories .category {
+    .categories {
         background-color: var(--darkgray-color) !important;
+    }
+
+    .categories .category {
+        background-color: var(--darkergray-color) !important;
         color: var(--white-color) !important;
     }
 
@@ -162,11 +217,52 @@
         background-color: var(--green-color) !important;
     }
 
+    .categories .search label input {
+        background-color: var(--darkergray-color) !important;
+        color: var(--white-color) !important;
+    }
+
     .tools .tool:hover {
-        background-color: var(--darkgray-color) !important;
+        background-color: var(--darkergray-color) !important;
     }
 
     .tools .tool .version {
         color: var(--white-color) !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .categories {
+        background: none !important;
+    }
+
+    .tools .tool {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        * {
+            margin: 0.5vh 0 !important;
+        }
+
+        *:first-child,
+        *:last-child {
+            margin: 0 0 0.5vh 0 !important;
+        }
+
+        .description,
+        .badges {
+            width: 100% !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+
+        .badges * {
+            margin: 0 0.5vw 0 0 !important;
+        }
+
+        .badges *:last-child {
+            margin: 0 !important;
+        }
     }
 }

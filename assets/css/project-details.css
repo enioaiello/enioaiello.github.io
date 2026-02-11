@@ -43,6 +43,7 @@
     }
 
     .description .desc-section,
+    .description .available-section,
     .description .corundum-section,
     .description .source-section {
         width: 100%;
@@ -66,6 +67,7 @@
     }
 
     .description .desc-section:hover,
+    .description .available-section:hover,
     .description .corundum-section:hover,
     .description .source-section:hover {
         background-color: var(--white-blur);
@@ -107,6 +109,10 @@
             width: 100%;
         }
     }
+
+    .placeholder {
+        border-radius: var(--default-border);
+    }
 }
 
 .button {
@@ -147,10 +153,11 @@
 
     .head,
     .description {
-        background-color: var(--darkgray-color) !important;
+        background-color: var(--darkergray-color) !important;
     }
 
     .description .desc-section,
+    .description .available-section,
     .description .corundum-section,
     .description .source-section {
         background-color: var(--black-color) !important;
@@ -158,6 +165,7 @@
 
     .description .desc-section:hover,
     .description .corundum-section:hover,
+    .description .available-section:hover,
     .description .source-section:hover {
         background-color: var(--black-blur) !important;
     }

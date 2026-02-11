@@ -32,22 +32,6 @@
         margin: 1vh 0;
     }
 
-    .content .button {
-        color: var(--white-color);
-        background-color: var(--green-color);
-        border: none;
-        border-radius: var(--default-border);
-        padding: 1% 5%;
-        cursor: pointer;
-        text-decoration: none;
-        text-align: center;
-    }
-
-    .content .button:hover {
-        color: var(--green-color);
-        background-color: var(--white-color);
-    }
-
     .profile-picture {
         width: 25%;
         border-radius: var(--rounded-border);
@@ -60,7 +44,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
 
     .project {
@@ -71,6 +55,9 @@
 
         padding: 1% 0;
         margin: 0 0 2.5vh;
+
+        background-color: var(--lightergray-color);
+        border-radius: var(--default-border);
     }
 
     .project .image {
@@ -82,27 +69,14 @@
     }
 
     .project .description {
-        width: 100%;
-        margin: 1vh 0;
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
         flex: 1;
         text-align: center;
-    }
-
-    .project .button {
-        display: inline-block;
-        color: var(--white-color);
-        background-color: var(--green-color);
-        border: none;
-        border-radius: var(--default-border);
-        padding: 1% 5%;
-        cursor: pointer;
-        text-decoration: none;
-        text-align: center;
-    }
-
-    .project .button:hover {
-        color: var(--green-color);
-        background-color: var(--white-color);
+        justify-content: center;
+        align-items: center;
+        min-height: 4em;
     }
 
     .project .other {
@@ -122,21 +96,8 @@
         align-items: center;
         flex-wrap: nowrap;
         flex: 1;
-        margin: 1vh 1vw 1vh 0;
+        margin: 1vh 1vw;
         overflow-x: auto;
-
-        /*
-        Style de la "scrollbar"
-        &::-webkit-scrollbar {
-            height: 4px;
-        }
-        &::-webkit-scrollbar-track {
-            background: transparent;
-        }
-        &::-webkit-scrollbar-thumb {
-            background: #888;
-            border-radius: 4px;
-        }*/
 
         -ms-overflow-style: none;
         scrollbar-width: none;
@@ -149,7 +110,7 @@
         background-color: var(--lightgray-color);
         color: var(--black-color);
         text-decoration: none;
-        border-radius: 10px;
+        border-radius: var(--default-border);
     }
 
     .project .other .language {
@@ -173,19 +134,7 @@
 
     .more-projects {
         margin: 0 auto;
-        color: var(--white-color);
-        background-color: var(--green-color);
-        border: none;
-        border-radius: var(--default-border);
-        padding: 1% 5%;
-        cursor: pointer;
-        text-decoration: none;
         text-align: center;
-    }
-
-    .more-projects:hover {
-        color: var(--green-color);
-        background-color: var(--white-color);
     }
 }
 
@@ -193,7 +142,7 @@
 .main #hire,
 .main #horizon {
     width: 100%;
-    height: 25vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -208,11 +157,24 @@
     .text {
         width: 75%;
     }
+
+    .button {
+        margin: 0 0 0 0;
+    }
+
+    .button:hover i {
+        color: inherit !important;
+    }
 }
 
 .main #corundum {
     background: url("../images/hero/corundum.png") no-repeat center center;
     background-size: cover;
+
+    ::selection {
+        background-color: #fdf0d5;
+        color: #003049;
+    }
 
     .title {
         color: #fdf0d5;
@@ -243,20 +205,6 @@
 
     .text {
         margin: 1vh 0;
-    }
-
-    .button {
-        padding: 1% 5%;
-        background-color: var(--green-color);
-        color: var(--white-color);
-        text-align: center;
-        text-decoration: none;
-        border-radius: var(--default-border);
-    }
-
-    .button:hover {
-        background-color: var(--white-color);
-        color: var(--green-color);
     }
 }
 
@@ -304,9 +252,33 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
-        padding: 3vh 0;
+        padding: 3vh 0 3vh 1vw;
+        border-radius: var(--default-border);
+        background-color: var(--lightergray-color);
+        margin: 2.5vh 0;
+        cursor: pointer;
+    }
+
+    .tool:hover {
+        background-color: var(--lightgray-color);
+    }
+
+    .tool .icon {
+        font-size: 1.5rem;
+    }
+
+    .tool .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0 0 0 1vw;
+    }
+
+    .tool h3.title {
+        text-align: left !important;
+        margin: 1vh 0;
     }
 
     .button {
@@ -337,10 +309,12 @@
     }
 
     .ressources .ressource {
+        width: 100%;
         cursor: pointer;
         padding: 2.5%;
         margin: 2.5vh 0;
         border-radius: var(--default-border);
+        background-color: var(--lightergray-color);
     }
 
     .ressources .ressource:first-child {
@@ -372,34 +346,9 @@
         color: var(--gray-color);
     }
 
-    .ressources .ressource .button {
-        display: inline-block;
-        margin: 1vh 0;
-        color: var(--white-color);
-        background-color: var(--green-color);
-        border: none;
-        border-radius: var(--default-border);
-        padding: 1% 5%;
-        cursor: pointer;
-        text-decoration: none;
-        text-align: center;
-    }
-
     .more-ressources {
         margin: 0 auto;
-        color: var(--white-color);
-        background-color: var(--green-color);
-        border: none;
-        border-radius: var(--default-border);
-        padding: 1% 5%;
-        cursor: pointer;
-        text-decoration: none;
         text-align: center;
-    }
-
-    .more-ressources:hover {
-        color: var(--green-color);
-        background-color: var(--white-color);
     }
 }
 
@@ -419,13 +368,6 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-
-        a {
-            color: var(--green-color);
-            text-decoration: none;
-            font-size: 2.5rem;
-            margin: 0 1vw;
-        }
 
         a:first-child {
             margin-left: 0;
@@ -493,37 +435,64 @@
     .ressources .more-ressources:hover,
     .tools .tool .button:hover {
         color: var(--white-color) !important;
-        background-color: var(--gray-color) !important;
+        background-color: var(--darkergray-color) !important;
+    }
+
+    .projects .project {
+        background-color: var(--darkgray-color) !important;
     }
 
     .projects .project .other .languages .language,
     .projects .project .other .button {
-        background-color: var(--darkgray-color) !important;
+        background-color: var(--darkergray-color) !important;
         color: var(--white-color) !important;
     }
 
     .projects .project .other .languages .language:hover,
     .projects .project .other .button:hover {
-        background-color: var(--green-color) !important;
+        background-color: var(--darkgray-color) !important;
         color: var(--white-color) !important;
+    }
+
+    .tools .tool {
+        background-color: var(--darkgray-color) !important;
+        color: var(--white-color) !important;
+    }
+
+    .tools .tool:hover {
+        background-color: var(--darkergray-color) !important;
     }
 
     .ressources .ressource .date {
         color: var(--white-color) !important;
     }
 
+    .ressources .ressource {
+        background-color: var(--darkergray-color) !important;
+        color: var(--white-color) !important;
+    }
+
     .ressources .ressource:hover {
         background-color: var(--darkgray-color) !important;
     }
+
+    #donations .services .button {
+        background-color: var(--darkgray-color) !important;
+        color: var(--white-color) !important;
+    }
+
+    #donations .services .button:hover {
+        background-color: var(--darkergray-color) !important;
+    }
 }
 
-/*.main #corundum .mobile-icon {
+.main #corundum .mobile-icon,
+.main #horizon .mobile-icon,
+.main #hire .mobile-icon {
     display: none;
     height: 25vh;
-    width: 100%;
-    background: url("../images/icons/corundum.png") no-repeat center center;
-    background-size: contain;
-}*/
+    border-radius: var(--rounded-border);
+}
 
 @media (max-width: 624px) {
     .main .hero {
@@ -560,18 +529,34 @@
     .main #horizon {
         align-items: center;
 
+        height: auto;
+
         .title {
             margin: 0 0 2.5vh 0;
+        }
+    }
+
+    .main #videos iframe {
+        height: 25vh;
+    }
+
+    .main #corundum,
+    .main #horizon,
+    .main #hire {
+        .mobile-icon {
+            display: block;
+
+            height: 25vh;
+        }
+
+        .text {
+            text-align: center;
         }
     }
 
     .main #corundum {
         background-image: none;
         background-color: #003049;
-
-        /*.mobile-icon {
-            display: inline-block;
-        }*/
     }
 
     .main #horizon {
@@ -579,15 +564,37 @@
         background-color: #302d3e;
     }
 
+    .main #hire {
+        background: none;
+    }
+
     .main .tools {
         flex-direction: column;
     }
 
     .main .tools .tool {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+
         gap: 2.5vh;
+
+        * {
+            text-align: center;
+        }
+
+        .content {
+            width: 90% !important;
+            align-items: center !important;
+        }
 
         .title {
             margin: 0 0 2.5vh 0;
+        }
+
+        .description {
+            width: 90%;
         }
 
         .button {
@@ -599,5 +606,22 @@
             justify-content: center;
             align-items: center;
         }
+    }
+
+    .main #donation .services {
+        flex-direction: column;
+
+        .button {
+            width: 100%;
+            margin: 1vh 0 !important;
+            padding: 2.5vh 0;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 624px) and (prefers-color-scheme: dark) {
+    .main #hire .title {
+        color: var(--white-color) !important;
     }
 }
