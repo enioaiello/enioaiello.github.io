@@ -143,6 +143,7 @@
 
         .screenshot {
             width: 100%;
+            border-radius: var(--default-border);
         }
     }
 
