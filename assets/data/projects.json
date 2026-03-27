@@ -93,7 +93,7 @@
     {
         "name": "config-ish",
         "description": "Script de configuration pour iSH",
-        "image": "../assets/images/placeholders/placeholder-1376-803.png",
+        "image": "../assets/images/placeholders/placeholder-1376x803.png",
         "github": ["enioaiello", "config-ish"],
         "information": "/project/config-ish",
         "category": "Scripts"
@@ -101,7 +101,7 @@
     {
         "name": "config-macos",
         "description": "Script de configuration pour macOS 10.11 à 26",
-        "image": "../assets/images/placeholders/placeholder-1376-803.png",
+        "image": "../assets/images/placeholders/placeholder-1376x803.png",
         "github": ["enioaiello", "config-macos"],
         "information": "/project/config-macos",
         "category": "Scripts"
@@ -109,7 +109,7 @@
     {
         "name": "google-fake-admin-panel",
         "description": "google-fake-admin-panel est un projet qui m'a permis d'apprendre l'HTML, le CSS et le JavaScript. Il précède à Admin Services Legacy",
-        "image": "../assets/images/placeholders/placeholder-1376-803.png",
+        "image": "../assets/images/placeholders/placeholder-1376x803.png",
         "github": ["enioaiello", "google-fake-admin-panel"],
         "information": "/project/google-fake-admin-panel",
         "category": "Scripts"
