@@ -60,8 +60,16 @@
         border-radius: var(--default-border);
     }
 
+    .project:hover {
+        background-color: var(--lightgray-color);
+        cursor: pointer;
+    }
+
     .project .image {
-        width: 100%;
+        width: 90%;
+        margin: 1vh auto;
+        border-radius: var(--default-border);
+        /*box-shadow: var(--default-shadow);*/
     }
 
     .project .title {
@@ -440,6 +448,10 @@
 
     .projects .project {
         background-color: var(--darkgray-color) !important;
+    }
+
+    .projects .project:hover {
+        background-color: var(--darkergray-color) !important;
     }
 
     .projects .project .other .languages .language,
