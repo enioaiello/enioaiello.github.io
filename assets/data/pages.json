@@ -80,6 +80,16 @@
     "view": "views/projects/zyra.html",
     "style": "assets/css/project-details.css"
   },
+  "/project/google-fake-admin-panel": {
+    "title": "google-fake-admin-panel",
+    "view": "views/projects/google-fake-admin-panel.html",
+    "style": "assets/css/project-details.css"
+  },
+  "/project/config-macos": {
+    "title": "Config macOS",
+    "view": "views/projects/config-macos.html",
+    "style": "assets/css/project-details.css"
+  },
   "/hire": {
     "title": "Page recruteur",
     "view": "views/hire.html",
