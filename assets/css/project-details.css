@@ -46,7 +46,8 @@
     .description .desc-section,
     .description .available-section,
     .description .corundum-section,
-    .description .source-section {
+    .description .source-section,
+    .description .techno-section {
         width: 100%;
         margin: 1vh 0;
         padding: 2.5%;
@@ -67,10 +68,44 @@
         }
     }
 
+    .description .techno-section {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .languages {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1vw;
+            margin: 1vh 0;
+            overflow-x: auto;
+        }
+
+        .languages .language {
+            padding: 1% 2%;
+            background-color: var(--lightgray-color);
+            color: var(--black-color);
+            text-decoration: none;
+            border-radius: var(--default-border);
+        }
+
+        .languages .language:hover {
+            background-color: var(--green-color);
+            color: var(--white-color);
+
+            cursor: default;
+        }
+    }
+
     .description .desc-section:hover,
     .description .available-section:hover,
     .description .corundum-section:hover,
-    .description .source-section:hover {
+    .description .source-section:hover,
+    .description .techno-section:hover {
         background-color: var(--white-blur);
     }
 
@@ -160,15 +195,28 @@
     .description .desc-section,
     .description .available-section,
     .description .corundum-section,
-    .description .source-section {
+    .description .source-section,
+    .description .techno-section {
         background-color: var(--black-color) !important;
     }
 
     .description .desc-section:hover,
     .description .corundum-section:hover,
     .description .available-section:hover,
-    .description .source-section:hover {
+    .description .source-section:hover,
+    .description .techno-section:hover {
         background-color: var(--black-blur) !important;
+    }
+
+    .techno-section {
+        .languages .language {
+            background-color: var(--darkergray-color) !important;
+            color: var(--white-color) !important;
+        }
+
+        .languages .language:hover {
+            background-color: var(--green-color) !important;
+        }
     }
 
     .button {
