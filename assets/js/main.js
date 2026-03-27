@@ -156,6 +156,32 @@ async function loadHome() {
     } catch (err) {
         console.error('Erreur lors du chargement des ressources :', err);
     }
+
+    // try {
+    //     const res = await fetch('assets/data/references.json');
+    //     const references = await res.json();
+    //     const container = document.querySelector('.references');
+    //
+    //     if (!container) return;
+    //
+    //     container.innerHTML = references.map(r => `
+    //         <div class="reference">
+    //             <img src="${r.image}" alt="Logo de ${r.name}" class="image">
+    //             <h3 class="title">${r.name}</h3>
+    //         </div>
+    //     `).join('');
+    //
+    //     // Ajout des events listeners
+    //     const referenceElements = container.querySelectorAll('.reference');
+    //     referenceElements.forEach((element, index) => {
+    //         element.addEventListener('click', () => {
+    //             const reference = references[index];
+    //             window.open(reference.link);
+    //         });
+    //     });
+    // } catch (err) {
+    //     console.error('Erreur lors du chargement des références :', err);
+    // }
 }
 
 async function loadProjects() {
