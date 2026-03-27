@@ -110,6 +110,7 @@
         "name": "google-fake-admin-panel",
         "description": "google-fake-admin-panel est un projet qui m'a permis d'apprendre l'HTML, le CSS et le JavaScript. Il précède à Admin Services Legacy",
         "image": "../assets/images/placeholders/placeholder-1376x803.png",
+        "languages": ["HTML", "CSS", "JS"],
         "github": ["enioaiello", "google-fake-admin-panel"],
         "information": "/project/google-fake-admin-panel",
         "category": "Scripts"
