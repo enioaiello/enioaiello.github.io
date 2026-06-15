@@ -74,6 +74,18 @@
     }
 }
 
+.update-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    font-size: var(--font-size-small);
+    text-align: center;
+    padding: 1.5vh 2vw;
+}
+
 .header {
     width: 100%;
     display: flex;
